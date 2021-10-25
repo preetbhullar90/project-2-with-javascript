@@ -241,3 +241,27 @@ margin:0 auto;
  margin: auto ;
   
 }
+
+/* indicator(div) style with a image*/
+.questions-box .answer-indicator div{
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    border-radius: 10px;
+    background-color: #cccccc;
+    margin-right: 3px;
+    
+    }
+    .questions-box .answer-indicator div.green{
+      background: url('assets/images/correctclick.png')center no-repeat;
+     background-color: green;
+     background-size: 50%;
+    }
+    
+    .questions-box .answer-indicator div.red{
+        background: url('assets/images/wrongclick.png')center no-repeat ;
+        background-size: 50%;
+    background-color: red;
+    
+    
+    }
