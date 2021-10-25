@@ -29,6 +29,22 @@
       </button>
     </div>
 
+       <!-- Button for closing How to play paragraph -->
+       <div class="hide" id="close-btn">
+        <div class="close-button-container">
+
+          <div id="close-button-body">
+            <a class="close-button" href="javascriptproject.html">x</a>
+            <p>First close this instruction then click on start button.In the questions choice
+              find right answer and end of these questions
+             you have to add your name<br> into username field after that you will get result with your name.
+              at the end give your feedback. </p>
+
+          </div>
+
+        </div>
+      </div>
+
  <!-- All the questions and options container -->
  <form id="question-container" class="questions-box custom  hide">
       <!-- div indicator with right and wrong answers image -->
@@ -55,6 +71,16 @@
     <div class="option-container" id="option-container">
     </div>
 
+     <!-- audio sound according to the right questions answers -->
+    <audio id="correct-sound">
+        <source src="/assets/sounds/corrects.mp3.wav" type="audio/mp3">
+      </audio>
+
+      <!-- audio sound according to the wrong questions answers -->
+      <audio id="/assets/sounds/wrong.mp3.wav">
+        <source src="wrong.mp3.wav" type="audio/mp3">
+      </audio>
+
       <!-- Home button container -->
     <div class="home-button hide" id="home-button">
       <button class="home-btn" id='fullReset'>Home</button>
@@ -64,6 +90,7 @@
     </div>
 
 </form>
+
 
 
     </header>
