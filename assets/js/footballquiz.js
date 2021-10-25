@@ -1,6 +1,6 @@
 /*  All const variables */
-const howStarts=document.getElementById('how-start');
-const starts=document.getElementById('starts');
+const howStarts = document.getElementById('how-start');
+const starts = document.getElementById('starts');
 const correctAnswer = document.getElementById('correct');
 const wrongAnswer = document.getElementById('wrong');
 const questionNumbers = document.getElementById('question-numbers');
@@ -15,17 +15,17 @@ const homeBtn = document.getElementById('home-button');
 const timeLeft = document.getElementById('count');
 const gameOver = document.getElementById('game');
 const closeBtn = document.getElementById('close-btn');
-const homeBox=document.getElementById('home-box');
-const resultContainer=document.getElementById('result-container');
-const correctSound=document.getElementById('correct-sound');
-const wrongSound=document.getElementById('wrong-sound');
+const homeBox = document.getElementById('home-box');
+const resultContainer = document.getElementById('result-container');
+const correctSound = document.getElementById('correct-sound');
+const wrongSound = document.getElementById('wrong-sound');
 const homeButton = document.getElementById('fullReset');
-const inputs=document.getElementById('inputss');
+const inputs = document.getElementById('inputss');
 const usernameSubmitButton = document.getElementById('username_submit');
 const userName = document.getElementById("myText");
-const ratingEmoji=document.querySelectorAll('.rating-emoji');
-const btn=document.getElementById('send');
-const feedback=document.getElementById('feedback');
+const ratingEmoji = document.querySelectorAll('.rating-emoji');
+const btn = document.getElementById('send');
+const feedback = document.getElementById('feedback');
 
 /*  All let variables */
 let questionDelay = 300;
@@ -37,27 +37,27 @@ let questionCounter = 0;
 let currentQuestion;
 let availableQuestion = [];
 let availableChoices = [];
-let correctAnswers=0;
-let wrongAnswers=0;
+let correctAnswers = 0;
+let wrongAnswers = 0;
 
 /* for fully loaded document without waiting */
 
-document.addEventListener('DOMContentLoaded', function(){
-   starts.addEventListener('click',start);
-    howStarts.addEventListener('click',howStart);
-    usernameSubmitButton.addEventListener('click',userNames);
- });
+document.addEventListener('DOMContentLoaded', function () {
+    starts.addEventListener('click', start);
+    howStarts.addEventListener('click', howStart);
+    usernameSubmitButton.addEventListener('click', userNames);
+});
 
 
-    /*  Quiz starting block*/
+/*  Quiz starting block*/
 
-function start(){
+function start() {
     startGame.classList.add('hide');
-   homeBtn.classList.remove('hide');
-   questionContainer.classList.remove('hide');
+    homeBtn.classList.remove('hide');
+    questionContainer.classList.remove('hide');
     update = setInterval('timer()', oneSecond);
-   newQuestions();
-   timers();
+    newQuestions();
+    timers();
 }
 
 /* how to play paragraph function */
@@ -70,28 +70,77 @@ function howStart() {
 }
 
 /* Function for answer indicator(create div) and image */
-function answerIndicator(){
-   answerIndicatorContainer.innerHTML='';
-    for(let i=0;i<questions.length;i++){
-       const indicator=document.createElement('div'); 
-       answerIndicatorContainer.appendChild(indicator);
+function answerIndicator() {
+    answerIndicatorContainer.innerHTML = '';
+    for (let i = 0; i < questions.length; i++) {
+        const indicator = document.createElement('div');
+        answerIndicatorContainer.appendChild(indicator);
     }
 }
 answerIndicator();
 
 /* Function for update answer with colour and get new question */
-function updateAnswerIndicator(markType){
-    answerIndicatorContainer.children[questionCounter-1].classList.add(markType);
+function updateAnswerIndicator(markType) {
+    answerIndicatorContainer.children[questionCounter - 1].classList.add(markType);
 }
 
 
-/* Fonction for get all the questions from questions js file */
+/* Function for get all the questions from footballquizquestions.js file */
 function allAvailableQuestion() {
-questions.forEach(element=>{
-    availableQuestion.push(element)  
-})
-     /* Show length of questions in the start block  */
-    questionNumbers.innerHTML =(questionCounter + 1) + ' of ' + questions.length;
-   
+    questions.forEach(element => {
+        availableQuestion.push(element);
+    })
+    /* Show length of questions in the start block  */
+    questionNumbers.innerHTML = (questionCounter + 1) + ' of ' + questions.length;
+
 }
 allAvailableQuestion();
+
+/* Function for get Random new question evry time */
+function newQuestions() {
+    /* questions number counter according to the questions length in questions options container */
+    questionNumber.innerHTML = 'Question ' + (questionCounter + 1) + ' of ' + questions.length;
+    if (availableQuestion.length === 0 || questionCounter >= questions) {
+        clearInterval(update)
+    }
+    /* create random question */
+    const allQuestionsIndex = availableQuestion[Math.floor(Math.random() * availableQuestion.length)];
+    currentQuestion = allQuestionsIndex;
+
+    /* show only question in innerhtml from questions file */
+    questionText.innerHTML = currentQuestion.q;
+    let index1 = availableQuestion.indexOf(allQuestionsIndex);
+    /* delete question evry single time which is shown to user,stop to repeat same question second time */
+    availableQuestion.splice(index1, 1);
+    const choiceLen = currentQuestion.choices.length;
+    for (let i = 0; i < choiceLen; i++) {
+        availableChoices.push(i)
+    }
+    /* empty option container after evry question */
+    optionContainer.innerHTML = '';
+
+    let animationDelay = 0.15;
+    for (let i = 0; i < choiceLen; i++) {
+
+        /* create only random choice from all questions file */
+        const choiceIndex = availableChoices[Math.floor(Math.random() * availableChoices.length)];
+        const index2 = availableChoices.indexOf(choiceIndex);
+         /* delete choice evry single time which is shown to user,stop to repeat same choices second time */
+        availableChoices.splice(index2, 1);
+        const choice = document.createElement('div');
+        choice.innerHTML = currentQuestion.choices[choiceIndex];
+        choice.id = choiceIndex;
+        choice.style.animationDelay = animationDelay + 's';
+        animationDelay = animationDelay + 0.15;
+        choice.className = 'choice';
+        optionContainer.appendChild(choice);
+        choice.setAttribute('onclick', 'allResult(this)');
+
+    }
+
+    questionCounter++
+    /* Progress bar increase according to the question length */
+    progressBar.style.width = `${(questionCounter / questions.length) * 100}%`;
+    timers();
+
+}
