@@ -384,6 +384,65 @@ background-color:#2791cf ;
     cursor: pointer;
     letter-spacing: 1px;
     margin-bottom: 20px;
-   
-    
 }
+
+/* Heading for feedback*/
+.feedback-heading{
+    position:relative;
+    z-index: 1;
+    text-align: center;
+   color: #fff;
+   letter-spacing: 1px;
+   background-color: rgba(19, 42, 51, 0.4);
+   padding: 30px 0;
+   margin:auto 20px;
+   border-radius:0px 0px 10px 10px;
+  font-size: 12px;
+}
+
+ .feedback-container{
+display: flex;
+width: 100%;
+justify-content: center;
+margin: 30px auto;
+
+
+ }
+
+ /* Emojis according to the user satisfaction */
+.rating-emoji{
+    padding: 0 10px;
+    cursor: pointer;
+}
+.rating-emoji.active,
+.rating-emoji:hover{
+    box-shadow: 0px 0px 10px rgba(199, 191, 191, 0.9);
+}
+ .rating-emoji img{
+     width: 60px;
+     height: 60px;
+    
+     border-radius: 50%;
+ }
+ 
+ .feedbacks{
+     display: flex;
+     flex-direction: column;
+    justify-content: center;
+     height: 20vh;
+     font-size: 25px;
+     margin: 5rem auto;
+ }
+ #feedbacks,#feedbacks>a{
+    background-color: #0a530a;
+    padding: 15px 30px;
+   margin: 5rem 35%;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 20px;
+    border-width: 0;
+    cursor: pointer;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+ }
