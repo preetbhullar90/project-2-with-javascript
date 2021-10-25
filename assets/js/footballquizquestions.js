@@ -1,7 +1,7 @@
 
 const questions = [
     {
-        q: '1. Which team has won the most FA Cup trophies?',
+        q: 'Which team has won the most FA Cup trophies?',
         choices: ['Arsenal', 'Manchester United', 'Chelsea', 'Liverpool'],
         answer: 0,
 
@@ -14,17 +14,17 @@ const questions = [
         answer: 1,
     },
     {
-        q: '3. Who has the most trophies in football history?',
+        q: 'Who has the most trophies in football history?',
         choices: ['Xavi', 'Cristiano Ronaldo ', 'Lionel Messi', 'Dani Alves '],
         answer: 3,
     },
     {
-        q: '4. Which player has the most goals?',
+        q: 'Which player has the most goals?',
         choices: ['Luis Suarez', 'Cristiano Ronaldo', 'Lionel Messi', 'Pele'],
         answer: 1,
     },
     {
-        q: '5. Which player has the most assist in football history ?',
+        q: 'Which player has the most assist in football history ?',
         choices: ['Lionel Messi', 'Luis Suarez', 'Cristiano Ronaldo', 'Angel di maria'],
         answer: 0,
     },
@@ -34,7 +34,7 @@ const questions = [
         answer: 2,
     },
     {
-        q: '7. Which club has won the most champions league titles?',
+        q: 'Which club has won the most champions league titles?',
         choices: ['Real Madrid', 'Liverpool', 'Chelsea', 'Barcelona'],
         answer: 0,
     },

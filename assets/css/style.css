@@ -253,13 +253,13 @@ margin:0 auto;
     
     }
     .questions-box .answer-indicator div.green{
-      background: url('assets/images/correctclick.png')center no-repeat;
+      background: url('/assets/images/correctclick.png')center no-repeat;
      background-color: green;
      background-size: 50%;
     }
     
     .questions-box .answer-indicator div.red{
-        background: url('assets/images/wrongclick.png')center no-repeat ;
+        background: url('/assets/images/wrongclick.webp')center no-repeat ;
         background-size: 50%;
     background-color: red;
     

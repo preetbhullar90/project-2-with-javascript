@@ -21,12 +21,17 @@ const homeButton = document.getElementById('fullReset');
 const inputs = document.getElementById('inputss');
 const usernameSubmitButton = document.getElementById('username_submit');
 const userName = document.getElementById("myText");
+const totalResult=document.getElementById('total-result');
+const rightAnswer=document.getElementById('right');
+const wrongsAnswer=document.getElementById('wrongs');
 const ratingEmoji = document.querySelectorAll('.rating-emoji');
 const btn = document.getElementById('send');
 const feedback = document.getElementById('feedback');
 
 /*  All let variables */
 let questionDelay = 300;
+/* For feedback delay */
+let delayInMilliseconds = 1000; 
 let oneSecond = 1000;
 let time = 20;
 let answerCounter = 0;
@@ -244,3 +249,44 @@ function gameover(){
        /* All wrong answer length */
        resultContainer.querySelector('.total-wrong').innerHTML=wrongAnswers;
     };
+
+    /* Function for username and submit username  */
+    function userNames(){
+        if(userName.value.length<1){
+         resultContainer.classList.add('hide');
+         btn.classList.add('hide');
+        }else{
+         btn.classList.remove('hide');
+         resultContainer.classList.remove('hide');
+         inputs.classList.add('hide');
+         totalResult.innerHTML=`${userName.value}: your result is`
+         rightAnswer.innerHTML=`  correct  : ${correctAnswers}`
+         wrongsAnswer.innerHTML=` wrong  : ${wrongAnswers}`
+        };
+ };  
+
+ /*  function for remove already selected emoji with user selection */
+ ratingEmoji.forEach((element) => {
+     /* Remove active class according to the user choice */
+    element.addEventListener('click',function(){
+        ratingEmoji.forEach(inner=>{
+            inner.classList.remove('active');
+        });
+        element.classList.add('active');
+       
+ 
+    });
+ });
+ 
+ 
+ 
+ /* Time delay for feedback message */
+ setTimeout(function() {
+     btn.addEventListener('click',()=>{
+     feedback.innerHTML=` <p class='feedbacks'>Thank you for your feedback
+     <a id='feedbacks' href='index.html'>home</a></p>`;
+     
+     
+ });
+ }, delayInMilliseconds);
+ 
