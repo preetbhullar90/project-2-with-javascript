@@ -58,7 +58,7 @@ function start() {
     update = setInterval('timer()', oneSecond);
     newQuestions();
     timers();
-}
+};
 
 /* how to play paragraph function */
 
@@ -67,7 +67,7 @@ function howStart() {
     starts.classList.add('already-answered');
     howStarts.classList.add('already-answered');
     closeBtn.classList.remove('hide');
-}
+};
 
 /* Function for answer indicator(create div) and image */
 function answerIndicator() {
@@ -75,25 +75,25 @@ function answerIndicator() {
     for (let i = 0; i < questions.length; i++) {
         const indicator = document.createElement('div');
         answerIndicatorContainer.appendChild(indicator);
-    }
-}
+    };
+};
 answerIndicator();
 
 /* Function for update answer with colour and get new question */
 function updateAnswerIndicator(markType) {
     answerIndicatorContainer.children[questionCounter - 1].classList.add(markType);
-}
+};
 
 
 /* Function for get all the questions from footballquizquestions.js file */
 function allAvailableQuestion() {
     questions.forEach(element => {
         availableQuestion.push(element);
-    })
+    });
     /* Show length of questions in the start block  */
     questionNumbers.innerHTML = (questionCounter + 1) + ' of ' + questions.length;
 
-}
+};
 allAvailableQuestion();
 
 /* Function for get Random new question evry time */
@@ -102,7 +102,7 @@ function newQuestions() {
     questionNumber.innerHTML = 'Question ' + (questionCounter + 1) + ' of ' + questions.length;
     if (availableQuestion.length === 0 || questionCounter >= questions) {
         clearInterval(update)
-    }
+    };
     /* create random question */
     const allQuestionsIndex = availableQuestion[Math.floor(Math.random() * availableQuestion.length)];
     currentQuestion = allQuestionsIndex;
@@ -114,8 +114,8 @@ function newQuestions() {
     availableQuestion.splice(index1, 1);
     const choiceLen = currentQuestion.choices.length;
     for (let i = 0; i < choiceLen; i++) {
-        availableChoices.push(i)
-    }
+        availableChoices.push(i);
+    };
     /* empty option container after evry question */
     optionContainer.innerHTML = '';
 
@@ -136,14 +136,14 @@ function newQuestions() {
         optionContainer.appendChild(choice);
         choice.setAttribute('onclick', 'allResult(this)');
 
-    }
+    };
 
     questionCounter++
     /* Progress bar increase according to the question length */
     progressBar.style.width = `${(questionCounter / questions.length) * 100}%`;
     timers();
 
-}
+};
 
 /* This function show result with correct and incorrect answer */
 function allResult(element) {
@@ -151,50 +151,76 @@ function allResult(element) {
     const id = parseInt(element.id);
     if (id === currentQuestion.answer) {
         /* change colour green of correct choice */
-        element.classList.add('green')
+        element.classList.add('green');
         correctAnswer.innerHTML = answerCounter + 1;
-        answerCounter++
+        answerCounter++;
         /* correct answer increment by 1 */
         correctAnswers++
         /* play sound with right answer */
-        correctSound.play()
-        updateAnswerIndicator('green')
+        correctSound.play();
+        updateAnswerIndicator('green');
     } else {
         /* change colour red of incorrect choice */
-     element.classList.add('red')
+     element.classList.add('red');
         wrongAnswer.innerHTML = wrongAnswerCounter + 1;
-        wrongAnswerCounter++
+        wrongAnswerCounter++;
         /* incorrect answer increment by 1 */
-         wrongAnswers++
+         wrongAnswers++;
          /* play sound with wrong answer */
-         wrongSound.play()
-        updateAnswerIndicator('red')
+         wrongSound.play();
+        updateAnswerIndicator('red');
         const choiceLen = optionContainer.children.length;
         for (let i = 0; i < choiceLen; i++) {
             /* show right answer with colour green if user click on wrong answer  */
             if (parseInt(optionContainer.children[i].id) === currentQuestion.answer) {
-                optionContainer.children[i].classList.add('green')
+                optionContainer.children[i].classList.add('green');
             } else {
                 unclickableChoice();
                
-            }
-        }
-    }
+            };
+        };
+    };
 
 /* Function for time, Time run 20second per question  */
 setTimeout(function () {
     /* when all the questions finished */
         if (questionCounter === questions.length) {
             unclickableChoice();
-            gameover()
-            clearInterval(update)
+            gameover();
+            clearInterval(update);
             
         } else {
          
            
-            newQuestions()
-        }
+            newQuestions();
+        };
 
     }, questionDelay);
 };
 
+/* function for just choose single option other all will be unclickable */
+function unclickableChoice() {
+    const choiceLen = optionContainer.children.length;
+   for(let i in choiceLen){
+        optionContainer.children[i].classList.add('already-answered');
+    };
+};
+
+
+/* Restart time with every single question */
+function timer() {
+    time--;
+    if (time) {
+        /* show time with clock logo and seconds in innerhtml */
+        timeLeft.innerHTML = ` <i class="fas fa-clock"></i> : ${time - 1} seconds`;
+    }else if (time <= 0) {
+        timers();
+        newQuestions();
+        
+    };
+};
+
+/* time seconds */
+function timers() {
+    time = 21;
+};
