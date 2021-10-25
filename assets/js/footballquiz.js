@@ -25,3 +25,24 @@ const userName = document.getElementById("myText");
 const ratingEmoji=document.querySelectorAll('.rating-emoji')
 const btn=document.getElementById('send')
 const feedback=document.getElementById('feedback')
+
+/* for fully loaded document without waiting */
+document.addEventListener('DOMContentLoaded', function(){
+  
+    starts.addEventListener('click',start)
+    howStarts.addEventListener('click',howStart)
+    usernameSubmitButton.addEventListener('click',userNames)
+    
+    });
+
+
+    /*  Quiz starting block*/ 
+
+function start(){
+    startGame.classList.add('hide')
+   homeBtn.classList.remove('hide')
+   questionContainer.classList.remove('hide')
+    update = setInterval('timer()', oneSecond)
+   newQuestions()
+   timers();
+}
