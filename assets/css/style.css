@@ -76,3 +76,80 @@ header{
     color: red;
     
 }
+
+/* customise start block and questions and options */
+.custom{
+  
+    position: relative;
+z-index: 1;
+  
+ 
+    background-color: rgba(19, 42, 51, 0.4);
+    color: #fff;
+   
+    
+    padding: 30px;
+   
+    border-radius: 10px;
+    letter-spacing: 1px;
+  
+
+   max-width: 90%;
+   align-items: center;
+  
+margin:0 auto;
+ 
+ 
+}
+/* Start block text*/
+.start-box{
+    text-align: center;
+   
+  
+}
+
+
+
+    
+        
+        
+
+.hide{
+    display: none;
+}
+
+/*  start block heading*/
+.custom>h3{
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    
+}
+/*  start block paragraph*/
+.custom> p{
+    font-size: 25px;
+    margin-bottom: 12px;
+    
+}
+/*  start block button*/
+.custom .btn {
+    margin-top: 20px;
+    
+  
+}
+/* Home button style*/
+.home-btn{
+    background-color: #0a530a;
+    padding: 15px 30px;
+    
+    border-radius: 10px;
+    color: #fff;
+    font-size: 15px;
+    border-width: 0;
+    cursor: pointer;
+    letter-spacing: 1px;
+    
+    
+    
+    
+}
