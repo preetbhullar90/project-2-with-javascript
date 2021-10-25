@@ -265,3 +265,21 @@ margin:0 auto;
     
     
     }
+
+    .fas{
+        font-size: 15px;
+        
+    }
+    /* Time style*/
+    .clock{
+      padding: 15px 10px;
+      background-color: rgba(19, 42, 51, 0.4);
+      border-radius: 10px;
+     
+    }
+    
+    .home-button{
+       display: flex;
+       justify-content: space-between;
+    }
+  
