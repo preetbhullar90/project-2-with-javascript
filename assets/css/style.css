@@ -363,3 +363,27 @@ background-color:#2791cf ;
 .total-wrong{
     color: red;
 }
+
+/* Input for username*/
+#myText{
+    padding:10px 0 10px 10px;
+    margin-bottom: 20px;
+    border-radius: 100px;
+    border-width: 0;
+    font-size: 15px;
+    margin-right: 5px;
+}
+/* username submit button*/
+#username_submit{
+    background-color: #0a530a;
+    padding: 10px 30px; 
+    border-radius: 10px;
+    color: #fff;
+    font-size: 15px;
+    border-width: 0;
+    cursor: pointer;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+   
+    
+}
