@@ -1,3 +1,4 @@
+/*  All const variables */
 const howStarts=document.getElementById('how-start')
 const starts=document.getElementById('starts')
 const correctAnswer = document.getElementById('correct')
@@ -26,17 +27,29 @@ const ratingEmoji=document.querySelectorAll('.rating-emoji')
 const btn=document.getElementById('send')
 const feedback=document.getElementById('feedback')
 
+/*  All let variables */
+let questionDelay = 300;
+let oneSecond = 1000;
+let time = 20;
+let answerCounter = 0;
+let wrongAnswerCounter = 0;
+let questionCounter = 0;
+let currentQuestion;
+let availableQuestion = [];
+let availableChoices = [];
+let correctAnswers=0;
+let wrongAnswers=0;
+
 /* for fully loaded document without waiting */
+
 document.addEventListener('DOMContentLoaded', function(){
-  
-    starts.addEventListener('click',start)
+   starts.addEventListener('click',start)
     howStarts.addEventListener('click',howStart)
     usernameSubmitButton.addEventListener('click',userNames)
-    
-    });
+ });
 
 
-    /*  Quiz starting block*/ 
+    /*  Quiz starting block*/
 
 function start(){
     startGame.classList.add('hide')
@@ -45,4 +58,13 @@ function start(){
     update = setInterval('timer()', oneSecond)
    newQuestions()
    timers();
+}
+
+/* how to play paragraph function */
+
+function howStart() {
+    questionContainer.classList.add('hide')
+    starts.classList.add('already-answered')
+    howStarts.classList.add('already-answered')
+    closeBtn.classList.remove('hide')
 }
