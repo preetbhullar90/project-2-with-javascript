@@ -13,9 +13,7 @@ const answerIndicatorContainer = document.getElementById('answers-indicator');
 const progressBar = document.getElementById("myprogressBar");
 const homeBtn = document.getElementById('home-button');
 const timeLeft = document.getElementById('count');
-const gameOver = document.getElementById('game');
 const closeBtn = document.getElementById('close-btn');
-const homeBox = document.getElementById('home-box');
 const resultContainer = document.getElementById('result-container');
 const correctSound = document.getElementById('correct-sound');
 const wrongSound = document.getElementById('wrong-sound');
@@ -46,6 +44,9 @@ document.addEventListener('DOMContentLoaded', function () {
     starts.addEventListener('click', start);
     howStarts.addEventListener('click', howStart);
     usernameSubmitButton.addEventListener('click', userNames);
+    homeButton.addEventListener('click', function (e) {
+        location.reload();
+    }, false);
 });
 
 
@@ -224,3 +225,22 @@ function timer() {
 function timers() {
     time = 21;
 };
+
+/* When all the questions finished this function show and hide classes */
+function gameover(){
+    questionContainer.classList.add('hide');
+    feedback.classList.remove('hide');
+    inputs.classList.remove('hide');
+    startGame.classList.add('hide');
+    gameResult();
+    };
+    
+    /* Get the right and wrong answer length at the end of all the questions */
+    function gameResult(){
+        /* Total questions length */
+       resultContainer.querySelector('#total-question').innerHTML=questions.length;
+       /* all correct answer length */
+       resultContainer.querySelector('.total-correct').innerHTML=correctAnswers;
+       /* All wrong answer length */
+       resultContainer.querySelector('.total-wrong').innerHTML=wrongAnswers;
+    };
