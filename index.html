@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
     integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Raleway%7CRighteous" rel="stylesheet">
-  <link rel="stylesheet" href="javascriptproject.css">
+  <link rel="stylesheet" href="">
   <title>Football Quiz</title>
 </head>
 
@@ -77,8 +77,8 @@
       </audio>
 
       <!-- audio sound according to the wrong questions answers -->
-      <audio id="/assets/sounds/wrong.mp3.wav">
-        <source src="wrong.mp3.wav" type="audio/mp3">
+      <audio id="wrong-sound">
+        <source src="/assets/sounds/wrong.mp3.wav" type="audio/mp3">
       </audio>
 
       <!-- Home button container -->
@@ -97,6 +97,11 @@
     <h5>Total question: <span id="total-question">0</span></h5>
     <h5 id="right" class="total-correct">correct: <span>0</span></h5>
     <h5 id="wrongs" class="total-wrong">wrong: <span>0</span></h5>
+  </div>
+
+  <!-- username input and submit button -->
+  <div id="inputss" class="hide result"><input id="myText" type="text" placeholder="User Name" maxlength="15">
+    <input type="submit" value="Submit!" id="username_submit">
   </div>
 
     </header>
