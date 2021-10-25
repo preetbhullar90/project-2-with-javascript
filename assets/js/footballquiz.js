@@ -144,3 +144,57 @@ function newQuestions() {
     timers();
 
 }
+
+/* This function show result with correct and incorrect answer */
+function allResult(element) {
+    /* questions and choices match with correct answer */
+    const id = parseInt(element.id);
+    if (id === currentQuestion.answer) {
+        /* change colour green of correct choice */
+        element.classList.add('green')
+        correctAnswer.innerHTML = answerCounter + 1;
+        answerCounter++
+        /* correct answer increment by 1 */
+        correctAnswers++
+        /* play sound with right answer */
+        correctSound.play()
+        updateAnswerIndicator('green')
+    } else {
+        /* change colour red of incorrect choice */
+     element.classList.add('red')
+        wrongAnswer.innerHTML = wrongAnswerCounter + 1;
+        wrongAnswerCounter++
+        /* incorrect answer increment by 1 */
+         wrongAnswers++
+         /* play sound with wrong answer */
+         wrongSound.play()
+        updateAnswerIndicator('red')
+        const choiceLen = optionContainer.children.length;
+        for (let i = 0; i < choiceLen; i++) {
+            /* show right answer with colour green if user click on wrong answer  */
+            if (parseInt(optionContainer.children[i].id) === currentQuestion.answer) {
+                optionContainer.children[i].classList.add('green')
+            } else {
+                unclickableChoice();
+               
+            }
+        }
+    }
+
+/* Function for time, Time run 20second per question  */
+setTimeout(function () {
+    /* when all the questions finished */
+        if (questionCounter === questions.length) {
+            unclickableChoice();
+            gameover()
+            clearInterval(update)
+            
+        } else {
+         
+           
+            newQuestions()
+        }
+
+    }, questionDelay);
+};
+
