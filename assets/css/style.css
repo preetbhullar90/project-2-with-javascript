@@ -328,7 +328,38 @@ background-color:#2791cf ;
      z-index: 1;
     align-items: center;
   }
-  
+
   #close-button-body>p{
       margin-top: 15px;
   }
+
+   /*  Result block with username and right wrong answers counters*/
+ 
+.result{
+    position:relative;
+    z-index: 1;
+    text-align: center;
+    color: #fff;
+    letter-spacing: 1px;
+    background-color: rgba(19, 42, 51, 0.8);
+    padding: 30px 0;
+    margin:auto 20px;
+    border-radius: 10px 10px 0px 0px;  
+}
+.result>h1,.result>h5{
+    padding: 10px 10px;
+    font-size: 22px;
+}
+.result>h1{
+    background-color:#2791cf ;
+    margin: 0 20px;
+    border-radius: 10px;
+    text-align: center;
+    
+}
+.total-correct{
+    color: seagreen;
+}
+.total-wrong{
+    color: red;
+}
