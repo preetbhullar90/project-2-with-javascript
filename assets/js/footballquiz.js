@@ -83,3 +83,15 @@ answerIndicator();
 function updateAnswerIndicator(markType){
     answerIndicatorContainer.children[questionCounter-1].classList.add(markType);
 }
+
+
+/* Fonction for get all the questions from questions js file */
+function allAvailableQuestion() {
+questions.forEach(element=>{
+    availableQuestion.push(element)  
+})
+     /* Show length of questions in the start block  */
+    questionNumbers.innerHTML =(questionCounter + 1) + ' of ' + questions.length;
+   
+}
+allAvailableQuestion();
