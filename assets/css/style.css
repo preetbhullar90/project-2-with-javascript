@@ -148,8 +148,17 @@ margin:0 auto;
     border-width: 0;
     cursor: pointer;
     letter-spacing: 1px;
-    
-    
-    
-    
+}
+
+/* questions length numbers in questions and options container*/
+.questions-box .question-number{
+    font-size: 20px;
+    font-weight: 500;
+    color: #fff;
+    padding-bottom: 10px;
+    font-family: Lato, sans-serif;
+    letter-spacing: 2px;
+  
+  display: inline-block;
+
 }
