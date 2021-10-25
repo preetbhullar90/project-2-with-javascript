@@ -40,3 +40,39 @@ header{
      
    }
    
+   /* Progress Status Bar */
+#Progress_Status {
+    display: flex;
+    margin:10px;
+    width: 50%;
+    background-color: #ddd;
+    margin-top: 5px;
+  }
+    
+  #myprogressBar {
+     
+    width: 0%;
+    height: 20px;
+    background-color: #4CAF50;
+  }
+
+/* Right and Wrong Answers counter with span */
+.right-wrong-answer{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+
+.right>span{
+   font-weight: 700;
+    color: green;
+    
+}
+.wrong>span{
+  
+    color: red;
+    
+}
