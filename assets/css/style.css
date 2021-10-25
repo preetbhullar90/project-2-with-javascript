@@ -204,3 +204,24 @@ margin:0 auto;
       opacity: 1;
   } 
 }
+
+/* options colour after wrong click*/
+.red{
+   
+    background-color: red;
+    color: #fff;
+    border-radius: 10px;
+    letter-spacing: 1px;
+    cursor: pointer;
+   
+}
+/* options colour after right click*/
+.green{
+   
+    background-color: green;
+   
+    border-radius: 10px;
+    letter-spacing: 1px;
+    cursor: pointer;
+   
+}
