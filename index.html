@@ -11,10 +11,23 @@
     integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Raleway%7CRighteous" rel="stylesheet">
   <link rel="stylesheet" href="javascriptproject.css">
-  <title>Document</title>
+  <title>Football Quiz</title>
 </head>
 
 <body>
+    <header>
+        <!--overlay on background-image-->
+    <div class="overlay"></div>
     
+    <!-- start and how to play block -->
+    <div class="custom start-box" id="start-btn">
+      <h3>Football Quiz</h3>
+      <p> Total number of question : <span id="question-numbers" class="total-question"></span></p>
+      <button type="button" class="btn" id="starts">Start Game</button>
+      <button type="button" class="btn" data-toggle="modal" data-target="#exampleModal" id="how-start">
+        How to Play
+      </button>
+    </div>
+    </header>
     </body>
     </html>
