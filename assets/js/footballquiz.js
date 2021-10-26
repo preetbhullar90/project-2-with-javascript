@@ -29,7 +29,7 @@ const btn = document.getElementById('send');
 const feedback = document.getElementById('feedback');
 
 /*  All let variables */
-let questionDelay = 300;
+let questionDelay = 150;
 /* For feedback delay */
 let delayInMilliseconds = 1000; 
 let oneSecond = 1000;
