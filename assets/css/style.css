@@ -8,9 +8,15 @@
 body{
     margin: 0;
     font-size: 15px;
-   /* background-color: #494545;*/
-   background-color: red;
-    font-family: Lato, sans-serif;
+    background-color: #494545;
+  font-family: Lato, sans-serif;
+  
+}
+
+/*  Main background image */ 
+.image{
+   overflow: hidden;
+    margin: auto;
     width: 100%;
     height: 100vh;
     background: url('/assets/images/football-background-image.jpg')center center /cover no-repeat ;
@@ -20,7 +26,7 @@ body{
 header{
     
     width: 100%;
-   padding-top: 18%;
+   padding-top: 10%;
       max-width: 1140px;
        height: 100vh;
      margin: auto;
@@ -104,7 +110,7 @@ margin:0 auto;
 /* Start block text*/
 .start-box{
     text-align: center;
-   
+   margin-top: 9rem;
   
 }
 
@@ -448,21 +454,24 @@ margin: 30px auto;
  }
 
  /* Extra small devices phones, 320px and down */
- @media screen and (max-width :320px) {
+ @media screen and (max-width :400px) {
 
-    header{
-        padding-top: 2rem;
-    }
+  .custom{
+      padding: 14px;
+  }
+   
 }
 
 /* Medium devices reponsive 450px and up) */
-@media screen and (max-width :450px) {
-  
+@media screen and (max-width :750px) {
+
+ 
+   
  .start-box{
      
-     margin-top: 2rem;
+     margin-top: 7rem;
  }
-
+ 
    .custom>h3{
      
        font-weight: 300;
@@ -509,12 +518,5 @@ margin: 30px auto;
    }
    .clock{
        padding: 15px 2px;
-   }
-}
-/* Extra large devices (large laptops and desktops, 1050px and up) */
-@media screen and (max-width :1050px) {
-
-   .start-box{
-      margin-top: 8rem;
    }
 }
