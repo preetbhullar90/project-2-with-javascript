@@ -1,522 +1,535 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    outline: none;
+
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	outline: none;
 }
 
-body{
-    margin: 0;
-    font-size: 15px;
-    background-color: #494545;
-  font-family: Lato, sans-serif;
-  
+body {
+	margin: 0;
+	font-size: 15px;
+	background-color: #494545;
+	font-family: Lato, sans-serif;
 }
 
-/*  Main background image */ 
-.image{
-   overflow: hidden;
-    margin: auto;
-    width: 100%;
-    height: 100vh;
-    background: url('/assets/images/football-background-image.jpg')center center /cover no-repeat ;
+
+/*  Main background image */
+
+.background-image {
+	overflow: hidden;
+	margin: auto;
+	width: 100%;
+	height: 100vh;
+	background: url('/assets/images/football-background-image.jpg')center center /cover no-repeat;
 }
+
 
 /* header contain all the blocks */
-header{
-    
-    width: 100%;
-   padding-top: 10%;
-      max-width: 1140px;
-       height: 100vh;
-     margin: auto;
-   
-     
-   }
-   
-   
-    /*overlay for background image*/ 
-   .overlay{
-      position: absolute;
-     top: 0;
-     left: 0;
-     width: 100%;
-     height: 100vh;
-     background-color: rgba(128,128,128,0.75);
-     
-   }
-   
-   /* Progress Status Bar */
+
+header {
+	width: 100%;
+	padding-top: 10%;
+	max-width: 1140px;
+	height: 100vh;
+	margin: auto;
+}
+
+
+/*overlay for background image*/
+
+.overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	background-color: rgba(128, 128, 128, 0.75);
+}
+
+
+/* Progress Status Bar */
+
 #Progress_Status {
-    display: flex;
-    margin:10px;
-    width: 50%;
-    background-color: #ddd;
-    margin-top: 5px;
-  }
-    
-  #myprogressBar {
-     
-    width: 0%;
-    height: 20px;
-    background-color: #4CAF50;
-  }
+	display: flex;
+	margin: 10px;
+	width: 50%;
+	background-color: #ddd;
+	margin-top: 5px;
+}
+
+#myprogressBar {
+	width: 0%;
+	height: 20px;
+	background-color: #4CAF50;
+}
+
 
 /* Right and Wrong Answers counter with span */
-.right-wrong-answer{
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-    margin-top: 5px;
-    margin-bottom: 10px;
-    font-size: 25px;
+
+.right-wrong-answer {
+	width: 100%;
+	display: flex;
+	justify-content: space-evenly;
+	margin-top: 5px;
+	margin-bottom: 10px;
+	font-size: 25px;
 }
 
-.right>span{
-   font-weight: 700;
-    color: green;
-    
+.right>span {
+	font-weight: 700;
+	color: green;
 }
-.wrong>span{
-  
-    color: red;
-    
+
+.wrong>span {
+	color: red;
 }
+
 
 /* customise start block and questions and options */
-.custom{
-  
-    position: relative;
-z-index: 1;
-  
- 
-    background-color: rgba(19, 42, 51, 0.4);
-    color: #fff;
-   
-    
-    padding: 30px;
-   
-    border-radius: 10px;
-    letter-spacing: 1px;
-  
 
-   max-width: 90%;
-   align-items: center;
-  
-margin:0 auto;
- 
- 
+.custom {
+	position: relative;
+	z-index: 1;
+	background-color: rgba(19, 42, 51, 0.4);
+	color: #fff;
+	padding: 30px;
+	border-radius: 10px;
+	letter-spacing: 1px;
+	max-width: 90%;
+	align-items: center;
+	margin: 0 auto;
 }
+
+
 /* Start block text*/
-.start-box{
-    text-align: center;
-   margin-top: 9rem;
-  
+
+.start-box {
+	text-align: center;
+	margin-top: 9rem;
 }
 
-
-
-    
-        
-        
-
-.hide{
-    display: none;
+.hide {
+	display: none;
 }
+
 
 /*  start block heading*/
-.custom>h3{
-    font-size: 30px;
-    font-weight: 600;
-    margin-bottom: 20px;
-    
+
+.custom>h3 {
+	font-size: 30px;
+	font-weight: 600;
+	margin-bottom: 20px;
 }
+
+
 /*  start block paragraph*/
-.custom> p{
-    font-size: 25px;
-    margin-bottom: 12px;
-    
+
+.custom>p {
+	font-size: 25px;
+	margin-bottom: 12px;
 }
+
+
 /*  start block button*/
+
 .custom .btn {
-    margin-top: 20px;
-    
-  
+	margin-top: 20px;
 }
+
+
 /* Home button style*/
-.home-btn{
-    background-color: #0a530a;
-    padding: 15px 30px;
-    
-    border-radius: 10px;
-    color: #fff;
-    font-size: 15px;
-    border-width: 0;
-    cursor: pointer;
-    letter-spacing: 1px;
+
+.home-btn {
+	background-color: #0a530a;
+	padding: 15px 30px;
+	border-radius: 10px;
+	color: #fff;
+	font-size: 15px;
+	border-width: 0;
+	cursor: pointer;
+	letter-spacing: 1px;
 }
+
 
 /* questions length numbers in questions and options container*/
-.questions-box .question-number{
-    font-size: 20px;
-    font-weight: 500;
-    color: #fff;
-    padding-bottom: 10px;
-    font-family: Lato, sans-serif;
-    letter-spacing: 2px;
-  
-  display: inline-block;
 
+.questions-box .question-number {
+	font-size: 20px;
+	font-weight: 500;
+	color: #fff;
+	padding-bottom: 10px;
+	font-family: Lato, sans-serif;
+	letter-spacing: 2px;
+	display: inline-block;
 }
+
 
 /* All the questions text */
-.questions-box .question-text{
-    font-family:Oswald,sans-serif ;
-    font-size: 30px;
-    font-weight: 400;
-    padding-top: 15px;
-    border-top: 2px solid #fff;
-    letter-spacing: 1px;
+
+.questions-box .question-text {
+	font-family: Oswald, sans-serif;
+	font-size: 30px;
+	font-weight: 400;
+	padding-top: 15px;
+	border-top: 2px solid #fff;
+	letter-spacing: 1px;
 }
+
+
 /* All the questions text */
-.questions-box .option-container{
-    font-size: 25px;
-    text-transform: capitalize;
+
+.questions-box .option-container {
+	font-size: 25px;
+	text-transform: capitalize;
 }
+
 
 /*  options style*/
-.choice{
-  
-    background-color: #2791cf;
-    padding: 20px ;
-    color: #fff;
-    margin:20px 0;
-    border-radius: 10px;
-    letter-spacing: 1px;
-    cursor: pointer;
-    opacity: 0;
-    animation: fadeIn 0.3s ease forwards;
-    z-index: -1;
+
+.choice {
+	background-color: #2791cf;
+	padding: 20px;
+	color: #fff;
+	margin: 20px 0;
+	border-radius: 10px;
+	letter-spacing: 1px;
+	cursor: pointer;
+	opacity: 0;
+	animation: fadeIn 0.3s ease forwards;
+	z-index: -1;
 }
-.already-answered{
-    pointer-events: none;
-    
+
+.already-answered {
+	pointer-events: none;
 }
+
 @keyframes fadeIn {
-  0%{
-      opacity: 0;
-  } 
-  100%{
-      opacity: 1;
-  } 
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
 }
+
 
 /* options colour after wrong click*/
-.red{
-   
-    background-color: red;
-    color: #fff;
-    border-radius: 10px;
-    letter-spacing: 1px;
-    cursor: pointer;
-   
+
+.red {
+	background-color: red;
+	color: #fff;
+	border-radius: 10px;
+	letter-spacing: 1px;
+	cursor: pointer;
 }
+
+
 /* options colour after right click*/
-.green{
-   
-    background-color: green;
-   
-    border-radius: 10px;
-    letter-spacing: 1px;
-    cursor: pointer;
-   
+
+.green {
+	background-color: green;
+	border-radius: 10px;
+	letter-spacing: 1px;
+	cursor: pointer;
 }
+
 
 /*  All the buttons style*/
-.btn{
-  
-    background-color: #0a530a;
-    padding: 15px 30px;
-   
-    top: 0;
-    border-radius: 10px;
-    color: #fff;
-    font-size: 15px;
-    border-width: 0;
-    cursor: pointer;
- margin: auto ;
-  
+
+.btn {
+	background-color: #0a530a;
+	padding: 15px 30px;
+	top: 0;
+	border-radius: 10px;
+	color: #fff;
+	font-size: 15px;
+	border-width: 0;
+	cursor: pointer;
+	margin: auto;
 }
+
 
 /* indicator(div) style with a image*/
-.questions-box .answer-indicator div{
-    width: 40px;
-    height: 40px;
-    display: inline-block;
-    border-radius: 10px;
-    background-color: #cccccc;
-    margin-right: 3px;
-    
-    }
-    .questions-box .answer-indicator div.green{
-      background: url('/assets/images/correctclick.png')center no-repeat;
-     background-color: green;
-     background-size: 50%;
-    }
-    
-    .questions-box .answer-indicator div.red{
-        background: url('/assets/images/wrongclick.webp')center no-repeat ;
-        background-size: 50%;
-    background-color: red;
-    
-    
-    }
 
-    .fas{
-        font-size: 15px;
-        
-    }
-    /* Time style*/
-    .clock{
-      padding: 15px 10px;
-      background-color: rgba(19, 42, 51, 0.4);
-      border-radius: 10px;
-     
-    }
-    
-    .home-button{
-       display: flex;
-       justify-content: space-between;
-    }
-  
-    /* How to play paragraph closing button*/
-.close-button{
- 
-    font-size: 20px;
-    background-color:red ;
-    height: 10px;
-    width: 60px;
-    color: #fff;
-    border-style: none;
-    cursor: pointer;
-
- text-decoration: none;
- line-height: 20px;
- padding: 0 15px;
- 
-}
-.close-button-container{
-   
-
-    letter-spacing: 1px;
-    color: #fff;
-   align-items: center;
-   text-align: justify;
- background-color:#2791cf ;
-border-radius: 20px;
+.questions-box .answer-indicator div {
+	width: 40px;
+	height: 40px;
+	display: inline-block;
+	border-radius: 10px;
+	background-color: #cccccc;
+	margin-right: 3px;
 }
 
- @keyframes howPlay {
-from {top: 0px;}
-    to {top: 70px;}
-  }
+.questions-box .answer-indicator div.green {
+	background: url('/assets/images/correctclick.png')center no-repeat;
+	background-color: green;
+	background-size: 50%;
+}
 
-  #close-button-body{
-margin: auto 20px;
-    position: fixed;
-    animation-name: howPlay;
-    animation-duration: 4s;
-    animation-fill-mode: forwards; 
-background-color:#2791cf ;
-    padding:20px 10px;
-    border-radius: 10px;
-     letter-spacing: 1px;
-     z-index: 1;
-    align-items: center;
-  }
+.questions-box .answer-indicator div.red {
+	background: url('/assets/images/wrongclick.webp')center no-repeat;
+	background-size: 50%;
+	background-color: red;
+}
 
-  #close-button-body>p{
-      margin-top: 15px;
-  }
+.fas {
+	font-size: 15px;
+}
 
-   /*  Result block with username and right wrong answers counters*/
- 
-.result{
-    position:relative;
-    z-index: 1;
-    text-align: center;
-    color: #fff;
-    letter-spacing: 1px;
-    background-color: rgba(19, 42, 51, 0.8);
-    padding: 30px 0;
-    margin:auto 20px;
-    border-radius: 10px 10px 0px 0px;  
+
+/* Time style*/
+
+.clock {
+	padding: 15px 10px;
+	background-color: rgba(19, 42, 51, 0.4);
+	border-radius: 10px;
 }
-.result>h1,.result>h5{
-    padding: 10px 10px;
-    font-size: 22px;
+
+.home-button {
+	display: flex;
+	justify-content: space-between;
 }
-.result>h1{
-    background-color:#2791cf ;
-    margin: 0 20px;
-    border-radius: 10px;
-    text-align: center;
-    
+
+
+/* How to play paragraph closing button*/
+
+.close-button {
+	font-size: 20px;
+	background-color: red;
+	height: 10px;
+	width: 60px;
+	color: #fff;
+	border-style: none;
+	cursor: pointer;
+	text-decoration: none;
+	line-height: 20px;
+	padding: 0 15px;
 }
-.total-correct{
-    color: seagreen;
+
+.close-button-container {
+	letter-spacing: 1px;
+	color: #fff;
+	align-items: center;
+	text-align: justify;
+	background-color: #2791cf;
+	border-radius: 20px;
 }
-.total-wrong{
-    color: red;
+
+@keyframes howPlay {
+	from {
+		top: 0px;
+	}
+	to {
+		top: 70px;
+	}
 }
+
+#close-button-body {
+	margin: auto 20px;
+	position: fixed;
+	animation-name: howPlay;
+	animation-duration: 4s;
+	animation-fill-mode: forwards;
+	background-color: #2791cf;
+	padding: 20px 10px;
+	border-radius: 10px;
+	letter-spacing: 1px;
+	z-index: 1;
+	align-items: center;
+}
+
+#close-button-body>p {
+	margin-top: 15px;
+}
+
+
+/*  Result block with username and right wrong answers counters*/
+
+.result {
+	position: relative;
+	z-index: 1;
+	text-align: center;
+	color: #fff;
+	letter-spacing: 1px;
+	background-color: rgba(19, 42, 51, 0.8);
+	padding: 30px 0;
+	margin: auto 20px;
+	border-radius: 10px 10px 0px 0px;
+}
+
+.result>h1,
+.result>h5 {
+	padding: 10px 10px;
+	font-size: 22px;
+}
+
+.result>h1 {
+	background-color: #2791cf;
+	margin: 0 20px;
+	border-radius: 10px;
+	text-align: center;
+}
+
+.total-correct {
+	color: seagreen;
+}
+
+.total-wrong {
+	color: red;
+}
+
 
 /* Input for username*/
-#myText{
-    padding:10px 0 10px 10px;
-    margin-bottom: 20px;
-    border-radius: 100px;
-    border-width: 0;
-    font-size: 15px;
-    margin-right: 5px;
+
+#myText {
+	padding: 10px 0 10px 10px;
+	margin-bottom: 20px;
+	border-radius: 100px;
+	border-width: 0;
+	font-size: 15px;
+	margin-right: 5px;
 }
+
+
 /* username submit button*/
-#username_submit{
-    background-color: #0a530a;
-    padding: 10px 30px; 
-    border-radius: 10px;
-    color: #fff;
-    font-size: 15px;
-    border-width: 0;
-    cursor: pointer;
-    letter-spacing: 1px;
-    margin-bottom: 20px;
+
+#username_submit {
+	background-color: #0a530a;
+	padding: 10px 30px;
+	border-radius: 10px;
+	color: #fff;
+	font-size: 15px;
+	border-width: 0;
+	cursor: pointer;
+	letter-spacing: 1px;
+	margin-bottom: 20px;
 }
+
 
 /* Heading for feedback*/
-.feedback-heading{
-    position:relative;
-    z-index: 1;
-    text-align: center;
-   color: #fff;
-   letter-spacing: 1px;
-   background-color: rgba(19, 42, 51, 0.4);
-   padding: 30px 0;
-   margin:auto 20px;
-   border-radius:0px 0px 10px 10px;
-  font-size: 12px;
+
+.feedback-heading {
+	position: relative;
+	z-index: 1;
+	text-align: center;
+	color: #fff;
+	letter-spacing: 1px;
+	background-color: rgba(19, 42, 51, 0.4);
+	padding: 30px 0;
+	margin: auto 20px;
+	border-radius: 0px 0px 10px 10px;
+	font-size: 12px;
 }
 
- .feedback-container{
-display: flex;
-width: 100%;
-justify-content: center;
-margin: 30px auto;
-
-
- }
-
- /* Emojis according to the user satisfaction */
-.rating-emoji{
-    padding: 0 10px;
-    cursor: pointer;
+.feedback-container {
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	margin: 30px auto;
 }
+
+
+/* Emojis according to the user satisfaction */
+
+.rating-emoji {
+	padding: 0 10px;
+	cursor: pointer;
+}
+
 .rating-emoji.active,
-.rating-emoji:hover{
-    box-shadow: 0px 0px 10px rgba(199, 191, 191, 0.9);
+.rating-emoji:hover {
+	box-shadow: 0px 0px 10px rgba(199, 191, 191, 0.9);
 }
- .rating-emoji img{
-     width: 60px;
-     height: 60px;
-    
-     border-radius: 50%;
- }
- 
- .feedbacks{
-     display: flex;
-     flex-direction: column;
-    justify-content: center;
-     height: 20vh;
-     font-size: 25px;
-     margin: 5rem auto;
- }
- #feedbacks,#feedbacks>a{
-    background-color: #0a530a;
-    padding: 15px 30px;
-   margin: 5rem 35%;
-    border-radius: 10px;
-    color: #fff;
-    font-size: 20px;
-    border-width: 0;
-    cursor: pointer;
-    text-decoration: none;
-    display: flex;
-    justify-content: center;
- }
 
- /* Extra small devices phones, 320px and down */
- @media screen and (max-width :400px) {
-
-  .custom{
-      padding: 14px;
-  }
-   
+.rating-emoji img {
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
 }
+
+.feedbacks {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 20vh;
+	font-size: 25px;
+	margin: 5rem auto;
+}
+
+#feedbacks,
+#feedbacks>a {
+	background-color: #0a530a;
+	padding: 15px 30px;
+	margin: 5rem 35%;
+	border-radius: 10px;
+	color: #fff;
+	font-size: 20px;
+	border-width: 0;
+	cursor: pointer;
+	text-decoration: none;
+	display: flex;
+	justify-content: center;
+}
+
+
+/* Extra small devices phones, 320px and down */
+
+@media screen and (max-width :400px) {
+	.custom {
+		padding: 14px;
+	}
+}
+
 
 /* Medium devices reponsive 450px and up) */
-@media screen and (max-width :750px) {
 
- 
-   
- .start-box{
-     
-     margin-top: 7rem;
- }
- 
-   .custom>h3{
-     
-       font-weight: 300;
-   } 
-   .custom>p{
-       font-size: 17px;
-   }
-  
-   .questions-box .question-text{
-       font-size: 20px;
-       
-   }
-   .questions-box .answer-indicator> div{
-       width: 23px;
-       height: 23px;
-    
-   }
-   .choice{
-       font-size: 15px;
-       margin: 10px 0;
-       padding: 15px;
-   }
- 
-   .result>h1,.result>h5{
-   font-weight: 300;
-       padding: 5px;
-   }
-   .feedback-heading>h1{
-       font-size:22px ;
-       font-weight: 300;
-   }
-   .feedbacks{
-       margin: 4rem auto;
-   }
-   .questions-box .question-number{
-       font-weight: 400;
-       font-size: 17px;
-       margin: 5px auto;
-   }
-   .right-wrong-answer{
-       margin: 2px auto;
-       font-size: 17px;
-       
-   }
-   .clock{
-       padding: 15px 2px;
-   }
+@media screen and (max-width :750px) {
+	.start-box {
+		margin-top: 7rem;
+	}
+	.custom>h3 {
+		font-weight: 300;
+	}
+	.custom>p {
+		font-size: 17px;
+	}
+	.questions-box .question-text {
+		font-size: 20px;
+	}
+	.questions-box .answer-indicator>div {
+		width: 23px;
+		height: 23px;
+	}
+	.choice {
+		font-size: 15px;
+		margin: 10px 0;
+		padding: 15px;
+	}
+	.result>h1,
+	.result>h5 {
+		font-weight: 300;
+		padding: 5px;
+	}
+	.feedback-heading>h1 {
+		font-size: 22px;
+		font-weight: 300;
+	}
+	.feedbacks {
+		margin: 4rem auto;
+	}
+	.questions-box .question-number {
+		font-weight: 400;
+		font-size: 17px;
+		margin: 5px auto;
+	}
+	.right-wrong-answer {
+		margin: 2px auto;
+		font-size: 17px;
+	}
+	.clock {
+		padding: 15px 2px;
+	}
 }
+

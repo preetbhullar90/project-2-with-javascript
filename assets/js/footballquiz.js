@@ -6,8 +6,8 @@ const wrongAnswer = document.getElementById('wrong');
 const questionNumbers = document.getElementById('question-numbers');
 const questionContainer = document.getElementById('question-container');
 const startGame = document.getElementById('start-btn');
-const questionNumber = document.getElementById('question-number');
-const questionText = document.getElementById('question-text');
+const allQuestionNumber = document.getElementById('question-number');
+const totalQuestionText = document.getElementById('question-text');
 const optionContainer = document.getElementById('option-container');
 const answerIndicatorContainer = document.getElementById('answers-indicator');
 const progressBar = document.getElementById("myprogressBar");
@@ -34,13 +34,13 @@ let questionDelay = 150;
 let delayInMilliseconds = 1000; 
 let oneSecond = 1000;
 let time = 20;
-let answerCounter = 0;
+let counter = 0;
 let wrongAnswerCounter = 0;
-let questionCounter = 0;
-let currentQuestion;
-let availableQuestion = [];
+let allQuestionCounter = 0;
+let allCurrentQuestion;
+let setAvailableQuestion = [];
 let availableChoices = [];
-let correctAnswers = 0;
+let correctQuestionAnswers = 0;
 let wrongAnswers = 0;
 
 /* for fully loaded document without waiting */
@@ -86,18 +86,18 @@ function answerIndicator() {
 answerIndicator();
 
 /* Function for update answer with colour and get new question */
-function updateAnswerIndicator(markType) {
-    answerIndicatorContainer.children[questionCounter - 1].classList.add(markType);
+function updateIndicator(markType) {
+    answerIndicatorContainer.children[allQuestionCounter - 1].classList.add(markType);
 };
 
 
 /* Function for get all the questions from footballquizquestions.js file */
 function allAvailableQuestion() {
     questions.forEach(element => {
-        availableQuestion.push(element);
+        setAvailableQuestion.push(element);
     });
     /* Show length of questions in the start block  */
-    questionNumbers.innerHTML = (questionCounter + 1) + ' of ' + questions.length;
+    questionNumbers.innerHTML = (allQuestionCounter + 1) + ' of ' + questions.length;
 
 };
 allAvailableQuestion();
@@ -105,20 +105,20 @@ allAvailableQuestion();
 /* Function for get Random new question evry time */
 function newQuestions() {
     /* questions number counter according to the questions length in questions options container */
-    questionNumber.innerHTML = 'Question ' + (questionCounter + 1) + ' of ' + questions.length;
-    if (availableQuestion.length === 0 || questionCounter >= questions) {
+    allQuestionNumber.innerHTML = 'Question ' + (allQuestionCounter + 1) + ' of ' + questions.length;
+    if (setAvailableQuestion.length === 0 || allQuestionCounter >= questions) {
         clearInterval(update)
     };
     /* create random question */
-    const allQuestionsIndex = availableQuestion[Math.floor(Math.random() * availableQuestion.length)];
-    currentQuestion = allQuestionsIndex;
+    const allQuestionsIndex = setAvailableQuestion[Math.floor(Math.random() * setAvailableQuestion.length)];
+    allCurrentQuestion = allQuestionsIndex;
 
     /* show only question in innerhtml from questions file */
-    questionText.innerHTML = currentQuestion.q;
-    let index1 = availableQuestion.indexOf(allQuestionsIndex);
+    totalQuestionText.innerHTML = allCurrentQuestion.q;
+    let index1 = setAvailableQuestion.indexOf(allQuestionsIndex);
     /* delete question evry single time which is shown to user,stop to repeat same question second time */
-    availableQuestion.splice(index1, 1);
-    const choiceLen = currentQuestion.choices.length;
+    setAvailableQuestion.splice(index1, 1);
+    const choiceLen = allCurrentQuestion.choices.length;
     for (let i = 0; i < choiceLen; i++) {
         availableChoices.push(i);
     };
@@ -134,7 +134,7 @@ function newQuestions() {
          /* delete choice evry single time which is shown to user,stop to repeat same choices second time */
         availableChoices.splice(index2, 1);
         const choice = document.createElement('div');
-        choice.innerHTML = currentQuestion.choices[choiceIndex];
+        choice.innerHTML = allCurrentQuestion.choices[choiceIndex];
         choice.id = choiceIndex;
         choice.style.animationDelay = animationDelay + 's';
         animationDelay = animationDelay + 0.15;
@@ -144,9 +144,9 @@ function newQuestions() {
 
     };
 
-    questionCounter++
+    allQuestionCounter++
     /* Progress bar increase according to the question length */
-    progressBar.style.width = `${(questionCounter / questions.length) * 100}%`;
+    progressBar.style.width = `${(allQuestionCounter / questions.length) * 100}%`;
     timers();
 
 };
@@ -155,16 +155,16 @@ function newQuestions() {
 function allResult(element) {
     /* questions and choices match with correct answer */
     const id = parseInt(element.id);
-    if (id === currentQuestion.answer) {
+    if (id === allCurrentQuestion.answer) {
         /* change colour green of correct choice */
         element.classList.add('green');
-        correctAnswer.innerHTML = answerCounter + 1;
-        answerCounter++;
+        correctAnswer.innerHTML = counter + 1;
+        counter++;
         /* correct answer increment by 1 */
-        correctAnswers++
+        correctQuestionAnswers++
         /* play sound with right answer */
         correctSound.play();
-        updateAnswerIndicator('green');
+        updateIndicator('green');
     } else {
         /* change colour red of incorrect choice */
      element.classList.add('red');
@@ -174,11 +174,11 @@ function allResult(element) {
          wrongAnswers++;
          /* play sound with wrong answer */
          wrongSound.play();
-        updateAnswerIndicator('red');
+        updateIndicator('red');
         const choiceLen = optionContainer.children.length;
         for (let i = 0; i < choiceLen; i++) {
             /* show right answer with colour green if user click on wrong answer  */
-            if (parseInt(optionContainer.children[i].id) === currentQuestion.answer) {
+            if (parseInt(optionContainer.children[i].id) === allCurrentQuestion.answer) {
                 optionContainer.children[i].classList.add('green');
             } else {
                 unclickableChoice();
@@ -190,7 +190,7 @@ function allResult(element) {
 /* Function for time, Time run 20second per question  */
 setTimeout(function () {
     /* when all the questions finished */
-        if (questionCounter === questions.length) {
+        if (allQuestionCounter === questions.length) {
             unclickableChoice();
             gameover();
             clearInterval(update);
@@ -245,7 +245,7 @@ function gameover(){
         /* Total questions length */
        resultContainer.querySelector('#total-question').innerHTML=questions.length;
        /* all correct answer length */
-       resultContainer.querySelector('.total-correct').innerHTML=correctAnswers;
+       resultContainer.querySelector('.total-correct').innerHTML=correctQuestionAnswers;
        /* All wrong answer length */
        resultContainer.querySelector('.total-wrong').innerHTML=wrongAnswers;
     };
@@ -260,7 +260,7 @@ function gameover(){
          resultContainer.classList.remove('hide');
          inputs.classList.add('hide');
          totalResult.innerHTML=`${userName.value}: your result is`
-         rightAnswer.innerHTML=`  correct  : ${correctAnswers}`
+         rightAnswer.innerHTML=`  correct  : ${correctQuestionAnswers}`
          wrongsAnswer.innerHTML=` wrong  : ${wrongAnswers}`
         };
  };  
