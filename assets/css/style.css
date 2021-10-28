@@ -380,6 +380,9 @@ header {
 	color: red;
 }
 
+.total-unread {
+	color: #830a83;
+}
 
 /* Input for username*/
 

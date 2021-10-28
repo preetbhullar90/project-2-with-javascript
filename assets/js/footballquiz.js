@@ -108,6 +108,7 @@ function newQuestions() {
     allQuestionNumber.innerHTML = 'Question ' + (allQuestionCounter + 1) + ' of ' + questions.length;
     if (setAvailableQuestion.length === 0 || allQuestionCounter >= questions) {
         clearInterval(update)
+        gameover()
     };
     /* create random question */
     const allQuestionsIndex = setAvailableQuestion[Math.floor(Math.random() * setAvailableQuestion.length)];
@@ -244,6 +245,8 @@ function gameover(){
     function gameResult(){
         /* Total questions length */
        resultContainer.querySelector('#total-question').innerHTML=questions.length;
+       /*  Total unAnswerd questions length  */
+       resultContainer.querySelector('.total-unread').innerHTML=`Not Answerd : ${questions.length%(correctQuestionAnswers+wrongAnswers)}`;
        /* all correct answer length */
        resultContainer.querySelector('.total-correct').innerHTML=correctQuestionAnswers;
        /* All wrong answer length */
