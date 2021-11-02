@@ -287,7 +287,7 @@ function gameover(){
  setTimeout(function() {
      btn.addEventListener('click',()=>{
      feedback.innerHTML=` <p class='feedbacks'>Thank you for your feedback
-     <a id='feedbacks' href='index.html'>home</a></p>`;
+     <a id='feedbacks' href='index.html'>Home</a></p>`;
      
      
  });
