@@ -100,7 +100,6 @@ header {
 
 .start-box {
 	text-align: center;
-	margin-top: 9rem;
 }
 
 .hide {
@@ -111,8 +110,8 @@ header {
 /*  start block heading*/
 
 .custom>h3 {
-	font-size: 30px;
-	font-weight: 600;
+	font-size: 40px;
+	text-shadow: 2px 2px #56b9eb80;
 	margin-bottom: 20px;
 }
 
@@ -128,21 +127,25 @@ header {
 /*  start block button*/
 
 .custom .btn {
-	margin-top: 20px;
+	margin: 20px;
 }
 
 
 /* Home button style*/
 
 .home-btn {
-	background-color: #0a530a;
-	padding: 15px 30px;
-	border-radius: 10px;
-	color: #fff;
-	font-size: 15px;
+	background-color: rgba(42, 25, 75, 0.1);
+	color: #2f99d6;
 	border-width: 0;
 	cursor: pointer;
-	letter-spacing: 1px;
+}
+
+.fa-home{
+	font-size: 30px;
+}
+
+.fa-home:hover{
+    color: #2d759e;
 }
 
 
@@ -151,7 +154,7 @@ header {
 .questions-box .question-number {
 	font-size: 20px;
 	font-weight: 500;
-	color: #fff;
+	color: #2f99d6;
 	padding-bottom: 10px;
 	font-family: Lato, sans-serif;
 	letter-spacing: 2px;
@@ -182,9 +185,9 @@ header {
 /*  options style*/
 
 .choice {
-	background-color: #2791cf;
-	padding: 20px;
-	color: #fff;
+	background-color: #fff;
+	padding: 15px;
+	color: #2f99d6;
 	margin: 20px 0;
 	border-radius: 10px;
 	letter-spacing: 1px;
@@ -192,6 +195,8 @@ header {
 	opacity: 0;
 	animation: fadeIn 0.3s ease forwards;
 	z-index: -1;
+	font-size: 25px;
+    font-family:Oswald,sans-serif ;
 }
 
 .already-answered {
@@ -211,7 +216,9 @@ header {
 /* options colour after wrong click*/
 
 .red {
-	background-color: red;
+	position: relative;
+   z-index: -2;
+	background-color: #ff0000;
 	color: #fff;
 	border-radius: 10px;
 	letter-spacing: 1px;
@@ -222,26 +229,36 @@ header {
 /* options colour after right click*/
 
 .green {
-	background-color: green;
-	border-radius: 10px;
-	letter-spacing: 1px;
-	cursor: pointer;
+	position: relative;
+    z-index: -2;
+    background-color: #008000;
+    border-radius: 10px;
+    letter-spacing: 1px;
+    cursor: pointer;
 }
 
 
 /*  All the buttons style*/
 
 .btn {
-	background-color: #0a530a;
+	
+	background-color: #fff;
 	padding: 15px 30px;
 	top: 0;
 	border-radius: 10px;
-	color: #fff;
-	font-size: 15px;
+	color: #2f99d6;
+	font-size: 17px;
+	font-family: 'Lato', sans-serif;
+	font-weight: 600;
 	border-width: 0;
 	cursor: pointer;
 	margin: auto;
+	letter-spacing: 1px;
 }
+
+.btn:hover{
+	background-color: #cec7c7;
+	}
 
 
 /* indicator(div) style with a image*/
@@ -251,26 +268,21 @@ header {
 	height: 40px;
 	display: inline-block;
 	border-radius: 10px;
-	background-color: #cccccc;
+	background-color: #fff;
 	margin-right: 3px;
 }
 
 .questions-box .answer-indicator div.green {
 	background: url('/assets/images/correctclick.png')center no-repeat;
-	background-color: green;
+	background-color: #008000;
 	background-size: 50%;
 }
 
 .questions-box .answer-indicator div.red {
 	background: url('/assets/images/wrongclick.webp')center no-repeat;
 	background-size: 50%;
-	background-color: red;
+	background-color: #ff0000;
 }
-
-.fas {
-	font-size: 15px;
-}
-
 
 /* Time style*/
 
@@ -280,6 +292,11 @@ header {
 	border-radius: 10px;
 }
 
+.fa-clock {
+	font-size: 15px;
+}
+
+/* Home button */
 .home-button {
 	display: flex;
 	justify-content: space-between;
@@ -290,24 +307,19 @@ header {
 
 .close-button {
 	font-size: 20px;
-	background-color: red;
 	height: 10px;
 	width: 60px;
-	color: #fff;
+	color: #2f99d6;
 	border-style: none;
 	cursor: pointer;
 	text-decoration: none;
 	line-height: 20px;
 	padding: 0 15px;
+	float: right;
 }
 
-.close-button-container {
-	letter-spacing: 1px;
-	color: #fff;
-	align-items: center;
-	text-align: justify;
-	background-color: #2791cf;
-	border-radius: 20px;
+.close-button:hover{
+    color: #cec7c7; 
 }
 
 @keyframes howPlay {
@@ -320,21 +332,49 @@ header {
 }
 
 #close-button-body {
-	margin: auto 20px;
 	position: fixed;
-	animation-name: howPlay;
-	animation-duration: 4s;
-	animation-fill-mode: forwards;
-	background-color: #2791cf;
-	padding: 20px 10px;
-	border-radius: 10px;
-	letter-spacing: 1px;
-	z-index: 1;
-	align-items: center;
+    animation-name: howPlay;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;   
+    top: 0;
+	left: 0;
+	z-index: 1050;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	outline: 0;
 }
 
-#close-button-body>p {
+.modal{
+    max-width: 500px;
+	margin: 1.75rem auto;
+	background-color: rgba(21, 20, 24, 1.0);
+	padding:20px;
+	border-radius: 10px;
+    letter-spacing: 1px;
+    color: #2f99d6;
+}
+
+.modal>li{
+    letter-spacing: 1px;
+    color: #2f99d6;
+    text-align: justify;
+	border-radius: 20px;
+	padding-top: 10px;
+}
+
+li:nth-last-child(6) {
+    padding-top: 40px;
+  }
+
+.modal h2{
+    text-shadow: 1px 1px #56b9eb80;
+}
+
+.close-button-container>p{
 	margin-top: 15px;
+	padding-top: 20px;
+	
 }
 
 
@@ -344,12 +384,12 @@ header {
 	position: relative;
 	z-index: 1;
 	text-align: center;
-	color: #fff;
+	color: #2f99d6;
 	letter-spacing: 1px;
-	background-color: rgba(19, 42, 51, 0.8);
-	padding: 30px 0;
-	margin: auto 20px;
-	border-radius: 10px 10px 0px 0px;
+	background-color: rgba(21, 20, 24, 0.600);
+	padding: 40px 30px;
+	margin-right: 40px;
+	border-radius: 10px;
 }
 
 .result>h1,
@@ -359,22 +399,12 @@ header {
 }
 
 .result>h1 {
-	background-color: #2791cf;
 	margin: 0 20px;
 	border-radius: 10px;
 	text-align: center;
-}
-
-.total-correct {
-	color: seagreen;
-}
-
-.total-wrong {
-	color: red;
-}
-
-.total-unread {
-	color: #830a83;
+	text-shadow: 1.5px 1.5px #56b9eb80;
+	font-size: 30px;
+    padding-bottom: 15px;
 }
 
 /* Input for username*/
