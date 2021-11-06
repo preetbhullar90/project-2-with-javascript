@@ -29,11 +29,13 @@ body {
 /* header contain all the blocks */
 
 header {
-	width: 100%;
-	padding-top: 10%;
-	max-width: 1140px;
-	height: 100vh;
-	margin: auto;
+	width: 100vw;
+    height: 100vh;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    max-width: 50rem;
+    align-items: center
 }
 
 
@@ -45,7 +47,7 @@ header {
 	left: 0;
 	width: 100%;
 	height: 100vh;
-	background-color: rgba(128, 128, 128, 0.75);
+	background-color: rgba(37, 36, 36, 0.7);
 }
 
 
