@@ -345,7 +345,7 @@ header {
 	outline: 0;
 }
 
-.modal{
+.model{
     max-width: 500px;
 	margin: 1.75rem auto;
 	background-color: rgba(21, 20, 24, 1.0);
@@ -355,7 +355,7 @@ header {
     color: #2f99d6;
 }
 
-.modal>li{
+.model>li{
     letter-spacing: 1px;
     color: #2f99d6;
     text-align: justify;
@@ -403,7 +403,6 @@ li:nth-last-child(6) {
 	border-radius: 10px;
 	text-align: center;
 	text-shadow: 1.5px 1.5px #56b9eb80;
-	font-size: 30px;
     padding-bottom: 15px;
 }
 
@@ -551,6 +550,7 @@ li:nth-last-child(6) {
    }
 	.feedback-h1{
 		font-size:25px ;
+		margin-top: 0;
 	}
 	#feedbacks{
 		margin: 2rem 30%;
@@ -572,12 +572,12 @@ li:nth-last-child(6) {
 /* Medium devices reponsive 450px and up) */
 
 @media screen and (max-width :450px) {
-	.modal{
-        margin-right: 40px;
+	.model{
+        margin:0 10px;
      }
      
      .custom>h3{
-         font-size: 40px;
+         font-size: 35px;
      }
    
   
@@ -618,16 +618,30 @@ li:nth-last-child(6) {
     font-weight: 300;
         padding: 5px;
     }
+
+	.all-result>h1{
+		font-size: 26px;
+		text-shadow: 1px 1px #56b9eb80;
+		padding-bottom: 10px;
+	}
+	.all-result>h5{
+		font-size: 20px;
+	}
+
+	
     .feedback-heading>h1{
         font-size:22px ;
         font-weight: 300;
     }
-    .feedback-h1{
-        margin-top: 20px;
-    }
+    
     .feedbacks{
         margin: 4rem auto;
     }
+
+	.feedback-h1{
+		margin-top: 0;
+	}
+
     .questions-box .question-number{
         font-weight: 400;
         font-size: 17px;
