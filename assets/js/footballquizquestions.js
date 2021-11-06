@@ -14,12 +14,12 @@ const questions = [
         answer: 1,
     },
     {
-        q: 'Who has the most trophies in football history?',
+        q: 'which player has the won the most trophies in football history?',
         choices: ['Xavi', 'Cristiano Ronaldo ', 'Lionel Messi', 'Dani Alves '],
         answer: 3,
     },
     {
-        q: 'Which player has the most goals?',
+        q: 'Which player has the most goals in a calendar year ?',
         choices: ['Luis Suarez', 'Cristiano Ronaldo', 'Lionel Messi', 'Pele'],
         answer: 1,
     },
