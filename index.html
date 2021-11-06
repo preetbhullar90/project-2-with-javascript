@@ -36,12 +36,17 @@
     <div class="hide" id="close-btn">
       <div class="close-button-container">
         <div id="close-button-body">
+          <div class="model">
           <a class="close-button" href="index.html">x</a>
-          <p>First close this instruction then click on start button.In the questions choice
-            find right answer and end of these questions
-            you have to add your name<br> into username field after that you will get result with your name.
-            at the end give your feedback.
+          <p><li>First close this instruction then click on start button.</li>
+            <li>In the questions choice
+            find right answer</li>
+            <li>After end of these questions
+            you have to add your name into username field</li>
+            <li> After that you will get result with your name.</li>
+           <li> At the end give your feedback.</li>
           </p>
+          </div>
         </div>
       </div>
     </div>
@@ -85,7 +90,7 @@
       
       <!-- Home button container -->
       <div class="home-button hide" id="home-button">
-        <button class="home-btn" id='fullReset'>Home</button>
+        <button class="home-btn" id='fullReset'><i class="fas fa-home"></i></button>
         <div class="clock">
           <p id="count"> <i class="fas fa-clock"></i> : 20 seconds</p>
         </div>
@@ -93,25 +98,25 @@
     </form>
 
 
-    <!-- Result container with username and total right and wrong answers -->
-    <div id="result-container" class="result hide">
+   
+
+
+    
+
+
+    <!-- feedback conatiner -->
+    <div class="feedback-heading hide" id="feedback">
+       <!-- Result container with username and total right and wrong answers -->
+    <div id="result-container" class="all-result hide">
       <h1 id="total-result">Your result :</h1>
       <h5>Total question: <span id="total-question">0</span></h5>
       <h5 class="total-unread"> <span>0</span></h5>
       <h5 id="right" class="total-correct">correct: <span>0</span></h5>
       <h5 id="wrongs" class="total-wrong">wrong: <span>0</span></h5>
-    </div>
+    
 
 
-    <!-- username input and submit button -->
-    <div id="inputss" class="hide result"><input id="myText" type="text" placeholder="User Name" maxlength="15">
-      <input type="submit" value="Submit!" id="username_submit">
-    </div>
-
-
-    <!-- feedback conatiner -->
-    <div class="feedback-heading hide" id="feedback">
-      <h1>How happy are you with my quiz game?</h1>
+      <h1 class="feedback-h1">How happy are you with my quiz game?</h1>
       <!-- emojis with paragraphs and reviews button -->
       <div class="feedback-container">
         <div class="rating-emoji">
@@ -128,6 +133,14 @@
         </div>
       </div>
       <button class="btn hide" id="send">Send review</button>
+    </div>
+    </div>
+
+    <!-- username input and submit button -->
+    <div id="inputss" class="hide result">
+      <h1>Your Name</h1>
+      <input id="myText" type="text" placeholder="User Name" maxlength="15">
+      <input type="submit" value="Submit!" id="username_submit">
     </div>
 
  </header>
