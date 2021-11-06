@@ -79,23 +79,14 @@ header {
 	font-size: 25px;
 }
 
-.right>span {
-	font-weight: 700;
-	color: green;
-}
-
-.wrong>span {
-	color: red;
-}
-
-
 /* customise start block and questions and options */
 
 .custom {
+	display: inline-block;
 	position: relative;
 	z-index: 1;
-	background-color: rgba(19, 42, 51, 0.4);
-	color: #fff;
+	background-color: rgba(21, 20, 24, 0.600);
+	color: #2f99d6;
 	padding: 30px;
 	border-radius: 10px;
 	letter-spacing: 1px;
