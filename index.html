@@ -16,136 +16,123 @@
 </head>
 
 <body>
+
   <!--  Main Background image div -->
   <div class="background-image">
-  <header>
-    <!--overlay on background-image-->
-    <div class="overlay"></div>
-    <!-- start and how to play block -->
-    <div class="custom start-box" id="start-btn">
-      <h3>Football Quiz</h3>
-      <p> Total number of question : <span id="question-numbers" class="total-question"></span></p>
-      <button type="button" class="btn" id="starts">Start Game</button>
-      <button type="button" class="btn" data-toggle="modal" data-target="#exampleModal" id="how-start">
-        How to Play
-      </button>
-    </div>
+    <header>
+      <!--overlay on background-image-->
+      <div class="overlay"></div>
+      <!-- start and how to play block -->
+      <div class="custom start-box" id="start-btn">
+        <h3>Football Quiz</h3>
+        <p> Total number of question : <span id="question-numbers" class="total-question"></span></p>
+        <button type="button" class="btn" id="starts">Start Game</button>
+        <button type="button" class="btn" data-toggle="modal" data-target="#exampleModal" id="how-start">
+          How to Play
+        </button>
+      </div>
 
-
-    <!-- Button for closing How to play paragraph -->
-    
+      <!-- Button for closing How to play paragraph -->
       <div class="close-button-container hide" id="close-btn">
         <div id="close-button-body">
           <div class="model">
             <h2>How to Play
-          <a class="close-button" href="index.html">x</a></h2>
-          <p><li>First close this instruction then click on start button.</li>
-            <li>In the questions choice
-            find right answer</li>
-            <li>After end of these questions
-            you have to add your name into username field</li>
-            <li> After that you will get result with your name.</li>
-           <li> At the end give your feedback.</li>
-          </p>
+              <a class="close-button" href="index.html">x</a>
+            </h2>
+            <ul>
+              <li>First close this instruction then click on start button.</li>
+              <li>In the questions choice
+                find right answer
+              </li>
+              <li>After end of these questions
+                you have to add your name into username field
+              </li>
+              <li> After that you will get result with your name.</li>
+              <li> At the end give your feedback.</li>
+            </ul>
           </div>
         </div>
-      </div>
-    
+      </div> 
 
+      <!-- All the questions and options container -->
+      <form id="question-container" class="questions-box custom  hide">
 
-    <!-- All the questions and options container -->
-    <form id="question-container" class="questions-box custom  hide">
-      <!-- div indicator with right and wrong answers image -->
-      <div id="answers-indicator" class="answer-indicator">
-      </div>
+        <!-- div indicator with right and wrong answers image -->
+        <div id="answers-indicator" class="answer-indicator">
+        </div>
 
-      <!-- Right and wrong answers counter in questions container -->
-      <div class="right-wrong-answer">
-        <p class="right">Correct: <span class="right" id="correct"> 0</span></p>
-        <p class="wrong">Wrong: <span class="wrong" id="wrong"> 0</span></p>
-      </div>
+        <!-- Right and wrong answers counter in questions container -->
+        <div class="right-wrong-answer">
+          <p class="right">Correct: <span class="right" id="correct"> 0</span></p>
+          <p class="wrong">Wrong: <span class="wrong" id="wrong"> 0</span></p>
+        </div>
 
-      <!-- progress bar according to the questions length -->
-      <div id="Progress_Status">
-        <div id="myprogressBar"></div>
-      </div>
+        <!-- progress bar according to the questions length -->
+        <div id="Progress_Status">
+          <div id="myprogressBar"></div>
+        </div>
+         <div class="question-number" id="question-number">
+        </div>
+        <div class="question-text" id="question-text">
+        </div>
+        <div class="option-container" id="option-container">
+        </div>
 
-      <div class="question-number" id="question-number">
-      </div>
+        <!-- audio sound according to the right questions answers -->
+        <audio id="correct-sound">
+          <source src="/assets/sounds/corrects.mp3.wav" type="audio/mp3">
+        </audio>
+        <!-- audio sound according to the wrong questions answers -->
+        <audio id="wrong-sound">
+          <source src="/assets/sounds/wrong.mp3.wav" type="audio/mp3">
+        </audio>
 
-      <div class="question-text" id="question-text">
-      </div>
+        <!-- Home button container -->
+        <div class="home-button hide" id="home-button">
+          <button class="home-btn" id='fullReset'><i class="fas fa-home"></i></button>
+          <div class="clock">
+            <p id="count"> <i class="fas fa-clock"></i> : 20 seconds</p>
+          </div>
+        </div>
+      </form>
 
-      <div class="option-container" id="option-container">
-      </div>
+      <!-- feedback conatiner -->
+      <div class="feedback-heading hide" id="feedback">
+        <!-- Result container with username and total right and wrong answers -->
+        <div id="result-container" class="all-result hide">
+          <h1 id="total-result">Your result :</h1>
+          <h5>Total question: <span id="total-question">0</span></h5>
+          <h5 id="right" class="total-correct">correct: <span>0</span></h5>
+          <h1 class="feedback-h1">How happy are you with my quiz game?</h1>
 
-      <!-- audio sound according to the right questions answers -->
-      <audio id="correct-sound">
-        <source src="/assets/sounds/corrects.mp3.wav" type="audio/mp3">
-      </audio>
-
-      <!-- audio sound according to the wrong questions answers -->
-      <audio id="wrong-sound">
-        <source src="/assets/sounds/wrong.mp3.wav" type="audio/mp3">
-      </audio>
-      
-      <!-- Home button container -->
-      <div class="home-button hide" id="home-button">
-        <button class="home-btn" id='fullReset'><i class="fas fa-home"></i></button>
-        <div class="clock">
-          <p id="count"> <i class="fas fa-clock"></i> : 20 seconds</p>
+          <!-- emojis with paragraphs and reviews button -->
+          <div class="feedback-container">
+            <div class="rating-emoji">
+              <img src="assets/emoji/unhappy.svg" alt="unhappy emoji">
+              <p>Unhappy</p>
+            </div>
+            <div class="rating-emoji">
+              <img src="assets/emoji/littlehappy.svg" alt="littlehappy emoji">
+              <p>happy</p>
+            </div>
+            <div class="rating-emoji active">
+              <img src="assets/emoji/happpy.svg" alt="happpy emoji">
+              <p>veryHappy</p>
+            </div>
+          </div>
+          <button class="btn hide" id="send">Send review</button>
         </div>
       </div>
-    </form>
 
-
-   
-
-
-    
-
-
-    <!-- feedback conatiner -->
-    <div class="feedback-heading hide" id="feedback">
-       <!-- Result container with username and total right and wrong answers -->
-    <div id="result-container" class="all-result hide">
-      <h1 id="total-result">Your result :</h1>
-      <h5>Total question: <span id="total-question">0</span></h5>
-      <h5 id="right" class="total-correct">correct: <span>0</span></h5>
-     
-    
-
-
-      <h1 class="feedback-h1">How happy are you with my quiz game?</h1>
-      <!-- emojis with paragraphs and reviews button -->
-      <div class="feedback-container">
-        <div class="rating-emoji">
-          <img src="assets/emoji/unhappy.svg" alt="unhappy emoji">
-          <p>Unhappy</p>
-        </div>
-        <div class="rating-emoji">
-          <img src="assets/emoji/littlehappy.svg" alt="littlehappy emoji">
-          <p>happy</p>
-        </div>
-        <div class="rating-emoji active">
-          <img src="assets/emoji/happpy.svg" alt="happpy emoji">
-          <p>veryHappy</p>
-        </div>
+      <!-- username input and submit button -->
+      <div id="inputss" class="hide result">
+        <h1>Your Name</h1>
+        <input id="myText" type="text" placeholder="User Name" maxlength="15">
+        <input type="submit" value="Submit!" id="username_submit">
       </div>
-      <button class="btn hide" id="send">Send review</button>
-    </div>
-    </div>
-
-    <!-- username input and submit button -->
-    <div id="inputss" class="hide result">
-      <h1>Your Name</h1>
-      <input id="myText" type="text" placeholder="User Name" maxlength="15">
-      <input type="submit" value="Submit!" id="username_submit">
-    </div>
-
- </header>
-</div>
-
+    </header>
+  </div>
+  
   <!-- javascript questions and main football quiz file -->
   <script src="assets/js/footballquizquestions.js"></script>
   <script src="assets/js/footballquiz.js"></script>
