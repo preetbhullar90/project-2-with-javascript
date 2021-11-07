@@ -23,7 +23,6 @@ const usernameSubmitButton = document.getElementById('username_submit');
 const userName = document.getElementById("myText");
 const totalResult=document.getElementById('total-result');
 const rightAnswer=document.getElementById('right');
-const wrongsAnswer=document.getElementById('wrongs');
 const ratingEmoji = document.querySelectorAll('.rating-emoji');
 const btn = document.getElementById('send');
 const feedback = document.getElementById('feedback');
@@ -42,6 +41,7 @@ let setAvailableQuestion = [];
 let availableChoices = [];
 let correctQuestionAnswers = 0;
 let wrongAnswers = 0;
+let score=0;
 
 /* for fully loaded document without waiting */
 
@@ -161,6 +161,7 @@ function allResult(element) {
         element.classList.add('green');
         correctAnswer.innerHTML = counter + 1;
         counter++;
+        score++;
         /* correct answer increment by 1 */
         correctQuestionAnswers++
         /* play sound with right answer */
@@ -245,12 +246,6 @@ function gameover(){
     function gameResult(){
         /* Total questions length */
        resultContainer.querySelector('#total-question').innerHTML=questions.length;
-       /*  Total unAnswerd questions length  */
-       resultContainer.querySelector('.total-unread').innerHTML=`Not Answerd : ${questions.length%(correctQuestionAnswers+wrongAnswers)}`;
-       /* all correct answer length */
-       resultContainer.querySelector('.total-correct').innerHTML=correctQuestionAnswers;
-       /* All wrong answer length */
-       resultContainer.querySelector('.total-wrong').innerHTML=wrongAnswers;
     };
 
     /* Function for username and submit username  */
@@ -263,8 +258,8 @@ function gameover(){
          resultContainer.classList.remove('hide');
          inputs.classList.add('hide');
          totalResult.innerHTML=`${userName.value}: your result is`
-         rightAnswer.innerHTML=`  correct  : ${correctQuestionAnswers}`
-         wrongsAnswer.innerHTML=` wrong  : ${wrongAnswers}`
+         rightAnswer.innerHTML=`  Score  : ${score*10}`
+        
         };
  };  
 
