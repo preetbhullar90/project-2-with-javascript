@@ -252,7 +252,7 @@ function gameover(){
     function userNames(){
         if(userName.value.length<1){
          resultContainer.classList.add('hide');
-         btn.classList.add('hide');
+        alert('Please enter your name')
         }else{
          btn.classList.remove('hide');
          resultContainer.classList.remove('hide');
