@@ -14,22 +14,22 @@ const questions = [
         answer: 1,
     },
     {
-        q: 'which player has the won the most trophies in football history?',
+        q: 'Which player has the won the most trophies in football history?',
         choices: ['Xavi', 'Cristiano Ronaldo ', 'Lionel Messi', 'Dani Alves '],
         answer: 3,
     },
     {
-        q: 'Which player has the most goals in a calendar year ?',
+        q: 'Which player has the most goals in a calendar year?',
         choices: ['Luis Suarez', 'Cristiano Ronaldo', 'Lionel Messi', 'Pele'],
         answer: 1,
     },
     {
-        q: 'Which player has the most assist in football history ?',
+        q: 'Which player has the most assists in football history?',
         choices: ['Lionel Messi', 'Luis Suarez', 'Cristiano Ronaldo', 'Angel di maria'],
         answer: 0,
     },
     {
-        q: 'Who has won the most premier league titles in history?',
+        q: 'Who has won the most league titles in premier league history?',
         choices: ['Liverpool', 'Manchester City', 'Manchester United', 'Leicester City'],
         answer: 2,
     },
@@ -44,13 +44,13 @@ const questions = [
         answer: 1,
     },
     {
-        q: 'Who has been given most red cards Since 2000?',
+        q: 'Who has been given the most red cards since 2000?',
         choices: ['Zlatan Ibrahimovic', 'Dani Alves', 'Pepe', 'Sergio Ramos'],
         answer: 3,
     },
     {
-        q: 'who scored the most goals in a single season ?',
-        choices: ['Gerd muller', 'Cristian Ronaldo ', 'Lionel Messi', 'Arthur ceuleers '],
+        q: 'Who scored the most goals in a single season ?',
+        choices: ['Gerd muller', 'Cristiano Ronaldo ', 'Lionel Messi', 'Arthur ceuleers '],
         answer: 2,
     }
 ]
