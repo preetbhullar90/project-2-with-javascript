@@ -10,34 +10,32 @@
 2. [User Experience](#User-Experience) 
    
 3. [Target](#Target)
-
-4. [Structure](#Structure)
    
-5. [Design](#Design)
+4. [Design](#Design)
   
-6. [Features](#Features)
+5. [Features](#Features)
 
-7. [Bugs](#Bugs) 
+6. [Bugs](#Bugs) 
 
-8. [Other Features](#Other-Features)
+7. [Other Features](#Other-Features)
 
-9. [Features Left to Implement](#Feature-Left-to-Implement)
+8. [Features Left to Implement](#Feature-Left-to-Implement)
 
-10. [Technologies Used](#Technologies-Used)
+9. [Technologies Used](#Technologies-Used)
   
-11. [Frameworks Libraries and Programs Used](#Frameworks-Libraries-and-Programs-Used)   
+10. [Frameworks Libraries and Programs Used](#Frameworks-Libraries-and-Programs-Used)   
 
-12. [Testing](#Testing)
+11. [Testing](#Testing)
 
     - [Testing.md](assets/testing-file/testing.md)
 
-13. [Deployment](#Deployment)
+12. [Deployment](#Deployment)
 
-14. [Make a clone](#Make-a-clone)
+13. [Make a clone](#Make-a-clone)
 
-15. [Credit](#Credit)
+14. [Credit](#Credit)
 
-16. [Acknowledgements](#Acknowledgements)
+15. [Acknowledgements](#Acknowledgements)
 ***
 
 ## Introduction
@@ -67,6 +65,14 @@ The main programming language I used for this project is HTML, CSS and JAVASCRIP
 * As a Current player, I want to see different questions every time.
 * As a Current player, I want to give feedback for the game.
 
+[Go Top](#Football-Quiz)
+
+## Target
+* On every game page I added a background of a football pitch with a goal post, I did this so users can easily understand this game is about football players or football history. 
+* I added a score tracker for each question. When a player plays this game, he can see the right or wrong answer before the final result. This encourages players finish the game to see their final result. 
+
+#### Skeleton
+* I used [Figma](https://www.figma.com/file/3CPjEZJrlwFCZhLZUp3eRe/javascript-p2?node-id=0%3A1) Wireframe to attach the following pages:
 
 
 
