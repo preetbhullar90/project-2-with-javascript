@@ -124,5 +124,15 @@ The main programming language I used for this project is HTML, CSS and JAVASCRIP
 ![](assets/readme-files/mobile-5.png)
 
 
+[Go Top](#Football-Quiz)
+## Design
+
+ ### Colour Schema
+* I used three colours for this game site. White colour (#fff) used for options background and 
+ for all the buttons,Blue colour (#2f99d6) used for all the text and dark Gray colour rgba(21, 20, 24, 0.600); used for game background.
+* I chose all the colours I used from w3school website.
+
+
+
 
 
