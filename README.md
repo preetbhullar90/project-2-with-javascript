@@ -253,6 +253,51 @@ To deploy a GitHub Page from the GitHub Repository, the following options were u
 
 8.	The link is now published in the "GitHub Pages" section.
 
+### Make a Clone
+
+1. [Login](https://github.com/)
+
+2.	Click on Your Repository option and select your project 
+
+3.	Click on the code dropdown menu.
+
+4.	To clone the repository using HTTPS, click "Clone with HTTPS", and copy the link.
+
+5.	In your local IDE open the Git Bash terminal.
+
+6.	Change the current working directory to the location where you want the cloned directory to be made.
+
+7.	Type git clone, and then paste the URL you copied in Step 3.
+
+           git clone https://github.com/USERNAME/REPOSITORY
+
+8.	Press Enter. Your local clone will be created.
+
+### Forking a Repository
+1.	[Login](https://github.com/) into GitHub 
+2.	On the top right, click the fork button.
+3.	You will get a copy of the repository in your GitHub account.
+
+
+
+## Credit
+
+### Media
+* The images were downloaded from freepik.com and kindpng.com .
+* The sound for correct and incorrect answers downloaded from storyblocks.com .
+
+### Code
+The code which I copied or edited and get better understanding about the code from following sites:
+* W3school
+* Stack Overflow
+* Google
+
+## Acknowledgements
+* I would especially like to thank my wife, who helped me by giving me some ideas regarding my website. She motivated me to finish this project to the best of my ability.
+* Secondly I would like to thank my mentor Seun, she helped during the whole process of the project.
+* Lastly I would like to acknowledge the W3School website as I gained many ideas from there. 
+
+[Go Top](#Football-Quiz)
 
 
 
