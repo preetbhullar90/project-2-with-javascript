@@ -47,3 +47,26 @@ This game consists of ten multiple choice questions with a choice of four answer
 This is my second project out of five milestones projects which students are required to complete in this full stack software development course from Code Institute.
 The main programming language I used for this project is HTML, CSS and JAVASCRIPT. It was essential to ensure that this site was responsive on all the devices. 
 
+[Go Top](#Football-Quiz)
+
+## User Experience
+
+### Ideal User Demographic
+* New football fans. 
+* Current football fans.
+
+### User Stories
+
+#### New football fans :
+* As a new player, I want this game to be responsive on all devices.
+* As a new player, I want instructions about how to play the game.
+* As a new player, I want to see multiple answer choices for each question.
+* As a new player, I want to what question I am currently on in the quiz.
+
+#### Current football fans :
+* As a Current player, I want to see different questions every time.
+* As a Current player, I want to give feedback for the game.
+
+
+
+
