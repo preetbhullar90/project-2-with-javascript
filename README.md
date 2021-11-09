@@ -145,6 +145,43 @@ The main programming language I used for this project is HTML, CSS and JAVASCRIP
 * I used this image to easily inform users that this website is about football. This image does not distract the user in game because I overlayed light colour on it.
 * Two more images were used, a green colour image for the right answers and a red colour image for the wrong answers.
 
+[Go Top](#Football-Quiz)
+
+## Features
+
+1.  Starting block.
+2.  Questions block.
+3.  Result block.
+4.  Feedback block.
+
+#### Starting block :
+* In the starting block, users will see the starting button and how to play the game.
+* On top of the buttons there is a number for the total quiz length in regard to how many questions there are. 
+* When the user will click on the how to play button, they will see one instruction block with a closing button.
+* Without clicking the closing button, the user won't be able to click the start button or the how to play button.
+* Without clicking the start button the user will not be able to enter the quiz.
+
+#### Questions block :
+* In the questions block, users will see correct and incorrect answer indicators with green and red colour images.
+* Underneath the answer indicators, I have added correct and incorrect answer counters.
+ I have also added a progress bar which tracks the user’s progression in the quiz. 
+* Under the progress bar the user will see all the length of quiz remaining.
+* For every question the user will see four multiple choice options to select from.
+* Underneath the choices I have added a home button that takes the user straight to the home page.
+* Underneath the choices opposite to the home button the user will be able to see the timer. 
+The timer will reset the start of every question, with 20 seconds given for each question. 
+
+#### Result block :
+* In the result block. The user is prompted to type their name and click the submit button without typing their name the user cannot get their result as the submit button will disabled.
+* After the user has written their name, they will get the result, name and the total correct and incorrect answers displayed on the screen.
+
+#### Feedback block :
+* In the feedback block, the user will have the option to select from three emojis according to how happy or unhappy they are with the quiz. 
+* After clicking on the review button, the user will get a message thanking them for their feedback
+
+
+
+
 
 
 
