@@ -148,6 +148,7 @@ function newQuestions() {
     allQuestionCounter++
     /* Progress bar increase according to the question length */
     progressBar.style.width = `${(allQuestionCounter / questions.length) * 100}%`;
+    updateIndicator('orange');
     timers();
 
 };

@@ -236,6 +236,11 @@ header {
 	cursor: pointer;
 }
 
+/*  Empty indicator colour*/
+.questions-box .answer-indicator div.orange{
+	 background-color:#ffbf00;
+}
+
 
 /*  All the buttons style*/
 
