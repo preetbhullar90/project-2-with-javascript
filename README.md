@@ -39,3 +39,11 @@
 
 16. [Acknowledgements](#Acknowledgements)
 ***
+
+## Introduction
+
+This game is designed for football lovers. The focus of this game is to build your knowledge about football and to test the players knowledge about the history of this sport including information about the players, goals and won games.
+This game consists of ten multiple choice questions with a choice of four answers. The purpose of the site is to test your knowledge and to learn some new facts about football.
+This is my second project out of five milestones projects which students are required to complete in this full stack software development course from Code Institute.
+The main programming language I used for this project is HTML, CSS and JAVASCRIPT. It was essential to ensure that this site was responsive on all the devices. 
+
