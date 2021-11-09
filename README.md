@@ -179,6 +179,33 @@ The timer will reset the start of every question, with 20 seconds given for each
 * In the feedback block, the user will have the option to select from three emojis according to how happy or unhappy they are with the quiz. 
 * After clicking on the review button, the user will get a message thanking them for their feedback
 
+## Bugs
+* In the software development field, it is very common to get many bugs in your code.
+* A bug that was discovered was that the user was able to answer the same question twice. This was because the answer window appeared on the screen for too long after the user had clicked on an answer.
+* I resolved this by reducing the time the game stays on the window after selecting an answer from 300ms to 150ms.
+
+## Issue Left
+* There are no issues left.
+
+## Other Features
+* When the user selects their answer, they will get a different sound depending on if they choose the correct or incorrect answer.
+
+### Feature Left to Implement
+* The user should be able to check their previous scores, regardless of when they completed the quiz.
+ The username should be saved in local Storage, hence whenever the user comes back, they will see their previous scores.
+* The score history is saved for a month, so when users play again, they can beat their old score.
+
+## Technologies Used
+
+### Languages Used
+
+* [HTML5](https://en.wikipedia.org/wiki/HTML5)
+* [CSS3](https://en.wikipedia.org/wiki/CSS)
+* [JS](https://en.wikipedia.org/wiki/JavaScript)
+
+
+
+
 
 
 
