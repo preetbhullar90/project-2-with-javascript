@@ -74,5 +74,55 @@ The main programming language I used for this project is HTML, CSS and JAVASCRIP
 #### Skeleton
 * I used [Figma](https://www.figma.com/file/3CPjEZJrlwFCZhLZUp3eRe/javascript-p2?node-id=0%3A1) Wireframe to attach the following pages:
 
+#### Desktop-Starting-Page
+ ![](assets/readme-files/desktop-1.png)
+
+#### Tablet-Starting-Page
+![](assets/readme-files/tablet-1.png)
+
+#### Mobile-Starting-Page
+![](assets/readme-files/mobile-1.png)
+
+
+#### Desktop-Questions-Answers-Page
+![](assets/readme-files/desktop-2.png)
+
+#### Tablet-Questions-Answers-Page
+![](assets/readme-files/tablet-2.png)
+
+#### Mobile-Questions-Answers-Page
+![](assets/readme-files/mobile-2.png)
+
+
+#### Desktop-Username-Page
+![](assets/readme-files/desktop-3.png)
+
+#### Tablet-Username-Page
+![](assets/readme-files/tablet-3.png)
+
+#### Mobile-Username-Page
+![](assets/readme-files/mobile-3.png)
+
+
+#### Desktop-Result-Page
+![](assets/readme-files/desktop-4.png)
+
+#### Tablet-Result-Page
+![](assets/readme-files/tablet-4.png)
+
+#### Mobile-Result-Page
+![](assets/readme-files/mobile-4.png)
+
+
+#### Desktop-Feedback-Message-Page
+![](assets/readme-files/desktop-5.png)
+
+#### Tablet-Feedback-Messages-Page
+![](assets/readme-files/tablet-5.png)
+
+#### Mobile-Feedback-Message-Page
+![](assets/readme-files/mobile-5.png)
+
+
 
 
