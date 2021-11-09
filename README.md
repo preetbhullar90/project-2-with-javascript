@@ -40,7 +40,8 @@
 
 ## Introduction
 
-This game is designed for football lovers. The focus of this game is to build your knowledge about football and to test the players knowledge about the history of this sport including information about the players, goals and won games.
+This game is designed for football lovers.
+The focus of this game is to build your knowledge about football and to test the players knowledge about the history of this sport including information about the players, goals and won games.
 This game consists of ten multiple choice questions with a choice of four answers. The purpose of the site is to test your knowledge and to learn some new facts about football.
 This is my second project out of five milestones projects which students are required to complete in this full stack software development course from Code Institute.
 The main programming language I used for this project is HTML, CSS and JAVASCRIPT. It was essential to ensure that this site was responsive on all the devices. 
@@ -69,7 +70,8 @@ The main programming language I used for this project is HTML, CSS and JAVASCRIP
 
 ## Target
 * On every game page I added a background of a football pitch with a goal post, I did this so users can easily understand this game is about football players or football history. 
-* I added a score tracker for each question. When a player plays this game, he can see the right or wrong answer before the final result. This encourages players finish the game to see their final result. 
+* I added a score tracker for each question. When a player plays this game, he can see the right or wrong answer before the final result.
+ This encourages players finish the game to see their final result. 
 
 #### Skeleton
 * I used [Figma](https://www.figma.com/file/3CPjEZJrlwFCZhLZUp3eRe/javascript-p2?node-id=0%3A1) Wireframe to attach the following pages:
@@ -131,6 +133,19 @@ The main programming language I used for this project is HTML, CSS and JAVASCRIP
 * I used three colours for this game site. White colour (#fff) used for options background and 
  for all the buttons,Blue colour (#2f99d6) used for all the text and dark Gray colour rgba(21, 20, 24, 0.600); used for game background.
 * I chose all the colours I used from w3school website.
+
+#### Typography
+* I used a font from the Google font website and linked it with an HTML file.
+* I used the font Lato for headings, numbers and for span.
+* I used the Oswald font for the questions.
+* I used Sans-serif font as a default when the main Lato and Oswald font does not work. By default, this font applied for all the text and numbers. 
+
+#### Imagery
+* I used one background image on all the pages. This image is of a football pitch and goal post.
+* I used this image to easily inform users that this website is about football. This image does not distract the user in game because I overlayed light colour on it.
+* Two more images were used, a green colour image for the right answers and a red colour image for the wrong answers.
+
+
 
 
 
