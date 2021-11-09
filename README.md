@@ -223,6 +223,36 @@ The timer will reset the start of every question, with 20 seconds given for each
 * [Am I Responsive?](http://ami.responsivedesign.is/# "Link to Am I Responsive Homepage")
 * Am I Responsive? was used to see if the site is responsive on different types of devices.
 
+* [Chrome Lighthouse](https://developers.google.com/web/tools/lighthouse "Link to Chrome Lighthouse homepage")
+* Chrome lighthouse was used for checking the site performance and good practice.
+
+[Go Top](#Football-Quiz)
+
+
+## Testing
+All the testing information is found [here](assets/test-file/testings.md) 
+
+## Deployment
+
+### Github Pages
+To deploy a GitHub Page from the GitHub Repository, the following options were used:
+
+1.	[Login](https://github.com/) into GitHub.
+
+2.	Click on your Repository, then click on the left side of the side bar or go to the right side to click on your profile and select your Repository option.
+
+3.	Click on the Setting option which is located on the top of your Project.
+
+4.	Scroll down and in the GitHub Pages option, click on the Check it out here! Link.
+
+5.	Under "Source", click the dropdown option called "None" and select "Master Branch".
+
+6.	Refresh your page on the top left corner with the circle button. 
+
+7.	Scroll back down in GitHub Pages and again click on Check it out here!
+
+8.	The link is now published in the "GitHub Pages" section.
+
 
 
 
