@@ -203,6 +203,26 @@ The timer will reset the start of every question, with 20 seconds given for each
 * [CSS3](https://en.wikipedia.org/wiki/CSS)
 * [JS](https://en.wikipedia.org/wiki/JavaScript)
 
+### Frameworks Libraries and Programs Used
+
+* [Font Awesome](https://fontawesome.com/ "Link to FontAwesome")
+* I used Font awesome to get all the icons I needed for my website.  
+
+* [Google Fonts](https://fonts.google.com/ "Link to Google Fonts")
+* Google Fonts was used to import the style of font that was needed in CSS e.g. Lato, Oswald and sans-serif.
+
+* [Git](https://git-scm.com/ "Link to Git homepage")
+* Gitpod was used for writing the code in the terminal; it was also used to commit and push the code in GitHub.
+
+* [GitHub](https://github.com/ "Link to GitHub")
+* GitHub was used to store the data which was pushed by Gitpod.
+
+* [Figma](https://www.figma.com/ "Link to Figma homepage")
+* Figma was used to create the wireframe of the project before starting code on the terminal.
+
+* [Am I Responsive?](http://ami.responsivedesign.is/# "Link to Am I Responsive Homepage")
+* Am I Responsive? was used to see if the site is responsive on different types of devices.
+
 
 
 
