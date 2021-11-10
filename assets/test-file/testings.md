@@ -65,5 +65,13 @@
 
 [Go Top](#Table-of-contents)
 
+* The result page responsive on devices and how it's works.
+### Result-Page
+![](/assets/test-file/image-5.gif)
 
+* Site on mobile device responsive and how it's works.
+### Site-on-Mobile-Device
+![](/assets/test-file/image-6.gif)
+
+[Go Top](#Table-of-contents)
 
