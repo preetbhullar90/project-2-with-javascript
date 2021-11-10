@@ -96,17 +96,25 @@ The [W3C Markup Validator](https://validator.w3.org/) service was used to valida
 ![](/assets/test-file/javascript-jshint.PNG)
 
 
+### Browser Validation
+- Chrome - [test image](/assets/test-file/browser-testing/chrome.PNG)
+- Edge - [test image](/assets/test-file/browser-testing/edge.PNG)
+- Opera - [test image](/assets/test-file/browser-testing/opera.PNG)
+- Firefox - [test image](/assets/test-file/browser-testing/firefox.PNG)
+
+
+
 ## Lighthouse
 
 * Website performance checked in lighthouse developer-tool,with the following result :
 
 1. ### Desktop 
-![](/assets/testing-file/desktop.PNG)
+![](/assets/test-file/desktop-lighthouse.PNG)
 
 
 2. ### Mobile
 
-![](/assets/testing-file/mobile.PNG)
+![](/assets/test-file/mobile-lighthouse.PNG)
 
 [Go Top](#Table-of-contents)
 
