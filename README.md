@@ -2,7 +2,7 @@
 
 ![Football Quiz Images](assets/test-file/am-i-responsive.PNG)
 
-[View the live project here](https://preetbhullar90.github.io/html-css-repository/)
+[View the live project here](https://preetbhullar90.github.io/project-2-with-javascript/)
 
 ## Contents
 1. [Introduction](#Introduction)

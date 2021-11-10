@@ -2,7 +2,7 @@
 
 [README.md file](/README.md)
 
-[View live project](https://preetbhullar90.github.io/html-css-repository/)
+[View live project](https://preetbhullar90.github.io/project-2-with-javascript/)
 
 [View website in GitHub Pages](https://github.com/preetbhullar90/project-2-with-javascript)
 
