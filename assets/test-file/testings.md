@@ -55,3 +55,15 @@
 ### Staring-Page
 ![](/assets/test-file/image-2.gif)
 
+* The main questions and answers  page responsive on devices.
+### Questions-Answers-Page
+![](/assets/test-file/image-3.gif)
+
+* How's the main questions and answers page works.
+### Questions-Answers-Page
+![](/assets/test-file/image-4.gif)
+
+[Go Top](#Table-of-contents)
+
+
+

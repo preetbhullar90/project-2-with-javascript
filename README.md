@@ -85,6 +85,8 @@ The main programming language I used for this project is HTML, CSS and JAVASCRIP
 #### Mobile-Starting-Page
 ![](assets/readme-files/mobile-1.png)
 
+[Go Top](#Football-Quiz)
+
 
 #### Desktop-Questions-Answers-Page
 ![](assets/readme-files/desktop-2.png)
@@ -94,6 +96,8 @@ The main programming language I used for this project is HTML, CSS and JAVASCRIP
 
 #### Mobile-Questions-Answers-Page
 ![](assets/readme-files/mobile-2.png)
+
+[Go Top](#Football-Quiz)
 
 
 #### Desktop-Username-Page
@@ -105,6 +109,8 @@ The main programming language I used for this project is HTML, CSS and JAVASCRIP
 #### Mobile-Username-Page
 ![](assets/readme-files/mobile-3.png)
 
+[Go Top](#Football-Quiz)
+
 
 #### Desktop-Result-Page
 ![](assets/readme-files/desktop-4.png)
@@ -114,6 +120,8 @@ The main programming language I used for this project is HTML, CSS and JAVASCRIP
 
 #### Mobile-Result-Page
 ![](assets/readme-files/mobile-4.png)
+
+[Go Top](#Football-Quiz)
 
 
 #### Desktop-Feedback-Message-Page
@@ -194,6 +202,8 @@ The timer will reset the start of every question, with 20 seconds given for each
 * The user should be able to check their previous scores, regardless of when they completed the quiz.
  The username should be saved in local Storage, hence whenever the user comes back, they will see their previous scores.
 * The score history is saved for a month, so when users play again, they can beat their old score.
+
+[Go Top](#Football-Quiz)
 
 ## Technologies Used
 
