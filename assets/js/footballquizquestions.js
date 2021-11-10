@@ -14,12 +14,12 @@ const questions = [
         answer: 1,
     },
     {
-        q: 'Which player has the won the most trophies in football history?',
+        q: 'Which player has won the most trophies in football history?',
         choices: ['Xavi', 'Cristiano Ronaldo ', 'Lionel Messi', 'Dani Alves '],
         answer: 3,
     },
     {
-        q: 'Which football player has scored the most goals in a calendar year?',
+        q: 'Which football player has scored the most goals in a year?',
         choices: ['Luis Suarez', 'Cristiano Ronaldo', 'Lionel Messi', 'Pele'],
         answer: 1,
     },
@@ -29,17 +29,17 @@ const questions = [
         answer: 0,
     },
     {
-        q: 'Who has won the most league titles in premier league history?',
+        q: 'Which player has won the most league titles in premier league history?',
         choices: ['Liverpool', 'Manchester City', 'Manchester United', 'Leicester City'],
         answer: 2,
     },
     {
-        q: 'Which football club has won the most champions league titles?',
+        q: 'Which football club has won most champions league titles?',
         choices: ['Real Madrid', 'Liverpool', 'Chelsea', 'Barcelona'],
         answer: 0,
     },
     {
-        q: "Who has won the most ballon d'ors in football history?",
+        q: "Which player has won the most ballon d'ors in football history?",
         choices: ['Luka Modric', 'Lionel Messi', 'Zinedine Zidane', 'Cristiano Ronaldo '],
         answer: 1,
     },
@@ -49,7 +49,7 @@ const questions = [
         answer: 3,
     },
     {
-        q: 'Who scored the most goals in a single football season ?',
+        q: 'Which player scored the most goals in a single  season ?',
         choices: ['Gerd muller', 'Cristiano Ronaldo ', 'Lionel Messi', 'Arthur ceuleers '],
         answer: 2,
     }

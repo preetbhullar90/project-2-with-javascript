@@ -93,7 +93,7 @@ header {
 	padding: 30px;
 	border-radius: 10px;
 	letter-spacing: 1px;
-	max-width: 80%;
+	max-width: 90%;
 	align-items: center;
 	margin: 0 auto;
 }
@@ -255,7 +255,7 @@ header {
 	border-radius: 10px;
 	color: #2f99d6;
 	font-size: 17px;
-	font-family: 'Lato', sans-serif;
+	font-family: 'Oswald', sans-serif;
 	font-weight: 600;
 	border-width: 0;
 	cursor: pointer;
@@ -362,6 +362,7 @@ header {
 	border-radius: 10px;
 	letter-spacing: 1px;
 	color: #2f99d6;
+	font-size: 17px;
 }
 
 .model>li {
@@ -438,6 +439,8 @@ li:nth-last-child(7) {
 	cursor: pointer;
 	letter-spacing: 1px;
 	margin-bottom: 20px;
+	font-family: Oswald;
+	font-weight: 600;
 }
 
 #username_submit:hover {
@@ -477,6 +480,7 @@ li:nth-last-child(7) {
 	padding: 30px 0;
 	margin: auto 20px;
 	border-radius: 10px;
+	
 }
 
 .feedback-container {
@@ -520,6 +524,8 @@ li:nth-last-child(7) {
 	padding: 30px;
 	border-radius: 10px;
 	background-color: rgba(21, 20, 24, 0.600);
+	font-family: Oswald;
+	font-weight: 600;
 }
 
 #feedbacks,
@@ -566,8 +572,8 @@ li:nth-last-child(7) {
 		margin: 2rem 30%;
 	}
 	.custom {
-		padding: 14px;
-		margin-bottom: 20px;
+		padding: 10px;
+		
 	}
 	.home-btn {
 		padding-top: 7px;
@@ -590,9 +596,7 @@ li:nth-last-child(7) {
 		left: 20px;
 		right: 20px;
 	}
-	.custom>h3 {
-		font-weight: 300;
-	}
+	
 	.questions-box .question-text {
 		font-size: 20px;
 	}
