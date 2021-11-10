@@ -75,3 +75,13 @@
 
 [Go Top](#Table-of-contents)
 
+## Automated Testing
+
+### Code Validation
+The [W3C Markup Validator](https://validator.w3.org/) service was used to validate the `HTML` code used.
+
+**Results:**
+
+### **Index.HTML Page**
+![](/assets/test-file/index-html.PNG)
+
