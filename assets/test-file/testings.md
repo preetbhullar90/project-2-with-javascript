@@ -34,3 +34,24 @@
 * For new players, they can see the question numbers and where they are in the quiz.
 * For new players, I added a bar to see their progression in the quiz.
 
+#### Current players Goals:
+1. As a Current player, I want to see different questions every time.
+* For current players, they will get different questions every time they restart the game or if they are playing again.
+
+2. As a Current player, I want to give feedback for the game.
+* For current players, I have added a feedback page with emojis.
+* Players can select an emoji according to how satisfied they are with this game.
+* After selecting an emoji, the player will see a nice message displayed on the screen.
+
+[Go Top](#Table-of-contents)
+
+## Manual File Test
+
+* The staring page responsive on all the devices.
+### Staring-Page
+![](/assets/test-file/image-1.gif)
+
+* The modal works with how to play button on starting page.
+### Staring-Page
+![](/assets/test-file/image-2.gif)
+
