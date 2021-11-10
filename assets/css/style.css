@@ -20,7 +20,7 @@ body {
 	margin: auto;
 	width: 100%;
 	height: 100vh;
-	background: url('/assets/images/new-footbal.jpg')center center /cover no-repeat;
+	background: url('assets/images/new-footbal.jpg')center center /cover no-repeat;
 }
 
 
@@ -276,13 +276,13 @@ header {
 }
 
 .questions-box .answer-indicator div.green {
-	background: url('/assets/images/correctclick.png')center no-repeat;
+	background: url('assets/images/correctclick.png')center no-repeat;
 	background-color: #008000;
 	background-size: 50%;
 }
 
 .questions-box .answer-indicator div.red {
-	background: url('/assets/images/wrongclick.webp')center no-repeat;
+	background: url('assets/images/wrongclick.webp')center no-repeat;
 	background-size: 50%;
 	background-color: #ff0000;
 }
