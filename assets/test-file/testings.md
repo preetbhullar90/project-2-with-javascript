@@ -85,3 +85,28 @@ The [W3C Markup Validator](https://validator.w3.org/) service was used to valida
 ### **Index.HTML Page**
 ![](/assets/test-file/index-html.PNG)
 
+### **Css Result**
+
+### **Style.css Page**
+![](/assets/test-file/style-css.PNG)
+
+### **Javascript Result**
+
+### **footballquiz.js Page**
+![](/assets/test-file/javascript-jshint.PNG)
+
+
+## Lighthouse
+
+* Website performance checked in lighthouse developer-tool,with the following result :
+
+1. ### Desktop 
+![](/assets/testing-file/desktop.PNG)
+
+
+2. ### Mobile
+
+![](/assets/testing-file/mobile.PNG)
+
+[Go Top](#Table-of-contents)
+
