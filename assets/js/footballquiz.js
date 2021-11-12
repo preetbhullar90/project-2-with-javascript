@@ -28,7 +28,7 @@ const btn = document.getElementById('send');
 const feedback = document.getElementById('feedback');
 
 /*  All let variables */
-let questionDelay = 150;
+let questionDelay = 1000;
 /* For feedback delay */
 let delayInMilliseconds = 1000; 
 let oneSecond = 1000;
@@ -205,12 +205,13 @@ setTimeout(function () {
         };
 
     }, questionDelay);
+    unclickableChoice();
 };
 
 /* function for just choose single option other all will be unclickable */
 function unclickableChoice() {
     const choiceLen = optionContainer.children.length;
-   for(let i in choiceLen){
+    for (let i = 0; i < choiceLen; i++) {
         optionContainer.children[i].classList.add('already-answered');
     };
 };
