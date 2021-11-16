@@ -1,4 +1,5 @@
 /*  All const variables */
+const soundMute = document.getElementById('soundmute');
 const howStarts = document.getElementById('how-start');
 const starts = document.getElementById('starts');
 const correctAnswer = document.getElementById('correct');
@@ -84,6 +85,23 @@ function answerIndicator() {
     };
 };
 answerIndicator();
+
+/*  Mute sound for correct ans incorrect Answers */
+soundMute.addEventListener('click', (event) => {
+    if (correctSound.muted === false && wrongSound.muted === false) {
+        event.target.style.color = 'red';
+        event.target.className = 'fas fa-volume-mute';
+        correctSound.muted = true;
+        wrongSound.muted = true;
+        
+    } else {
+        event.target.style.color = '#2f99d6';
+        event.target.className = 'fas fa-volume-up';
+        correctSound.muted = false;
+        wrongSound.muted = false;
+        
+    }
+});
 
 /* Function for update answer with colour and get new question */
 function updateIndicator(markType) {
@@ -259,7 +277,7 @@ function gameover(){
          btn.classList.remove('hide');
          resultContainer.classList.remove('hide');
          inputs.classList.add('hide');
-         totalResult.innerHTML=`${userName.value}: your result is`
+         totalResult.innerHTML=`${userName.value.toUpperCase()}: your result is`
          rightAnswer.innerHTML=`  Score  : ${score*10}`
         
         };
