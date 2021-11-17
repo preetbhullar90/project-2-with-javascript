@@ -277,11 +277,16 @@ function gameover(){
          btn.classList.remove('hide');
          resultContainer.classList.remove('hide');
          inputs.classList.add('hide');
-         totalResult.innerHTML=`${userName.value.toUpperCase()}: your result is`
+         totalResult.innerHTML=`${capitalLetter(userName.value)}: your result is`
          rightAnswer.innerHTML=`  Score  : ${score*10}`
         
         };
- };  
+ }; 
+ 
+    /*  Capital Letter of User Name*/
+   function capitalLetter(str) {
+       return str.charAt(0).toUpperCase() + str.slice(1);
+}
 
  /*  function for remove already selected emoji with user selection */
  ratingEmoji.forEach((element) => {

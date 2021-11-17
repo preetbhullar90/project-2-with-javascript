@@ -76,62 +76,19 @@ The main programming language I used for this project is HTML, CSS and JAVASCRIP
 #### Skeleton
 * I used [Figma](https://www.figma.com/file/3CPjEZJrlwFCZhLZUp3eRe/javascript-p2?node-id=0%3A1) Wireframe to attach the following pages:
 
-#### Desktop-Starting-Page
- ![](assets/readme-files/desktop-1.png)
+#### Desktop-Pages
+![](assets/readme-files/image-2.PNG)
 
-#### Tablet-Starting-Page
-![](assets/readme-files/tablet-1.png)
+![](assets/readme-files/image-3.PNG)
+ 
 
-#### Mobile-Starting-Page
-![](assets/readme-files/mobile-1.png)
+#### Tablet-Pages
+![](assets/readme-files/image-4.PNG)
 
-[Go Top](#Football-Quiz)
+![](assets/readme-files/image-5.PNG)
 
-
-#### Desktop-Questions-Answers-Page
-![](assets/readme-files/desktop-2.png)
-
-#### Tablet-Questions-Answers-Page
-![](assets/readme-files/tablet-2.png)
-
-#### Mobile-Questions-Answers-Page
-![](assets/readme-files/mobile-2.png)
-
-[Go Top](#Football-Quiz)
-
-
-#### Desktop-Username-Page
-![](assets/readme-files/desktop-3.png)
-
-#### Tablet-Username-Page
-![](assets/readme-files/tablet-3.png)
-
-#### Mobile-Username-Page
-![](assets/readme-files/mobile-3.png)
-
-[Go Top](#Football-Quiz)
-
-
-#### Desktop-Result-Page
-![](assets/readme-files/desktop-4.png)
-
-#### Tablet-Result-Page
-![](assets/readme-files/tablet-4.png)
-
-#### Mobile-Result-Page
-![](assets/readme-files/mobile-4.png)
-
-[Go Top](#Football-Quiz)
-
-
-#### Desktop-Feedback-Message-Page
-![](assets/readme-files/desktop-5.png)
-
-#### Tablet-Feedback-Messages-Page
-![](assets/readme-files/tablet-5.png)
-
-#### Mobile-Feedback-Message-Page
-![](assets/readme-files/mobile-5.png)
+#### Mobile-Pages
+![](assets/readme-files/image-6.PNG)
 
 
 [Go Top](#Football-Quiz)
