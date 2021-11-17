@@ -314,12 +314,11 @@ header {
 
 .clock {
 	padding: 15px 10px;
-	background-color: rgba(19, 42, 51, 0.4);
 	border-radius: 10px;
 }
 
 .fa-clock {
-	font-size: 15px;
+	font-size: 18px;
 }
 
 
