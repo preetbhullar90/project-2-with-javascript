@@ -630,6 +630,9 @@ header {
 	#myText {
 		margin-bottom: 20px;
 	}
+	.error{
+		text-align: center;
+	}
 	.result>h5 {
 		font-weight: 300;
 		padding: 5px;
