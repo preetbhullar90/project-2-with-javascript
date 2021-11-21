@@ -395,6 +395,13 @@ header {
 	text-shadow: 1.5px 1.5px #56b9eb80;
 }
 
+/* Error if username is empty */
+.error{
+    color: #f80606;
+    text-align: left;
+    padding: 0 0 5px 10px;
+}
+
 
 /*  Result block with username and right wrong answers counters*/
 

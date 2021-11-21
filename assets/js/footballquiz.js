@@ -20,6 +20,7 @@ const correctSound = document.getElementById('correct-sound');
 const wrongSound = document.getElementById('wrong-sound');
 const homeButton = document.getElementById('fullReset');
 const inputs = document.getElementById('inputss');
+const errors=document.getElementById('errors')
 const usernameSubmitButton = document.getElementById('username_submit');
 const userName = document.getElementById("myText");
 const totalResult=document.getElementById('total-result');
@@ -272,7 +273,7 @@ function gameover(){
     function userNames(){
         if(userName.value.length<1){
          resultContainer.classList.add('hide');
-        alert('Please enter your name')
+         errors.innerHTML="Sorry, Please enter your name.";
         }else{
          btn.classList.remove('hide');
          resultContainer.classList.remove('hide');
