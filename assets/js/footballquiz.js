@@ -218,9 +218,7 @@ setTimeout(function () {
             clearInterval(update);
             
         } else {
-         
-           
-            newQuestions();
+          newQuestions();
         };
 
     }, questionDelay);
@@ -271,10 +269,30 @@ function gameover(){
 
     /* Function for username and submit username  */
     function userNames(){
+
+        /* Name validation only letters */
+        let regex = /^[a-zA-Z\-]+$/;
+        let userNames =userName.value.match(regex);
+        
+        /* If username Empty */
         if(userName.value.length<1){
          resultContainer.classList.add('hide');
          errors.innerHTML="Sorry, Please enter your name.";
-        }else{
+        }
+
+        /*If Username less then 1 letter */
+        else if(userName.value.length < 2){
+         errors.innerHTML="Sorry, Please enter full name.";
+         resultContainer.classList.add('hide');
+         }
+
+        /*  If username in number */
+        else if(userNames == null){
+         errors.innerHTML="Sorry, Invalid username"
+        resultContainer.classList.add('hide');
+        }
+        
+        else{
          btn.classList.remove('hide');
          resultContainer.classList.remove('hide');
          inputs.classList.add('hide');
