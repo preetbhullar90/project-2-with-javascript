@@ -9,7 +9,7 @@ const questions = [
 
     },
     {
-        q: 'Which football national team won the 2014 FIFA world cup ?',
+        q: 'Which national football team won the 2014 FIFA world cup?',
         choices: ['England ', 'Germany ', 'France', 'Spain '],
         answer: 1,
     },
