@@ -371,7 +371,7 @@ header {
 }
 
 .model {
-	max-width: 500px;
+	max-width: 570px;
 	margin: 1.75rem auto;
 	background-color: rgba(21, 20, 24, 1.0);
 	padding: 20px 15px 20px 15px;
@@ -383,7 +383,7 @@ header {
 
 .fa-futbol {
 	letter-spacing: 1px;
-	color: #2f99d6;
+	color: #fff;
 	text-align: justify;
 	border-radius: 20px;
 	padding-top: 10px;
@@ -393,6 +393,7 @@ header {
 .model h2 {
 	padding-bottom: 10px;
 	text-shadow: 1.5px 1.5px #56b9eb80;
+	border-bottom: 2px solid #2f99d6;
 }
 
 /* Error if username is empty */
